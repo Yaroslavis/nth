@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-BW.RU - Оборудование для монтажа печатных плат</title>
+    <meta name="description" content="Профессиональное оборудование для монтажа печатных плат. Линии монтажа, паяльные станции, расходные материалы.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/photolithography.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                <i class="fas fa-search"></i>
+            </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                    <i class="fas fa-phone-volume"></i>
+                    <span>Заказать звонок</span>
+                </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                    <i class="fas fa-cogs"></i>
+                    <span>Услуги</span>
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                </button>
+                    <ul class="site-header__submenu">
+                        <li>
+                            <a href="film-deposition.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Нанесение пленок</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photolithography.html">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>Фотолитография</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="etching.html">
+                                <i class="fas fa-water"></i>
+                                <span>Травление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="metallization.html">
+                                <i class="fas fa-atom"></i>
+                                <span>Металлизация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chemical-treatment.html">
+                                <i class="fas fa-flask"></i>
+                                <span>Хим обработка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quality-control.html">
+                                <i class="fas fa-search"></i>
+                                <span>Контроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="packaging.html">
+                                <i class="fas fa-box"></i>
+                                <span>Корпусирование</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            <i class="fas fa-home"></i>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="services.html" class="breadcrumbs__link">
+                            <i class="fas fa-cogs"></i>
+                            <span>Услуги</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item" aria-current="page">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Нанесение защитных пленок</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="service-page">
+        <!-- Герой-секция услуги -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero__content">
+                    <div class="service-hero__text">
+                        <h1 class="service-hero__title">Нанесение защитных пленок на подложки</h1>
+                        <p class="service-hero__subtitle">Профессиональное плазмохимическое осаждение защитных и изолирующих слоев SiO₂, Si₃N₄ для микроэлектроники</p>
+                        <div class="service-hero__features">
+                            <div class="feature-tag">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Толщина от 10 нм до 5 мкм</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Равномерность ±1%</span>
+                            </div>
+                            <div class="feature-tag">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Чистота класса 100</span>
+                            </div>
+                        </div>
+                        <div class="service-hero__actions">
+                            <a href="#order-form" class="btn btn--primary btn--large">
+                                <i class="fas fa-calendar-check"></i> Заказать услугу
+                            </a>
+                            <a href="#process" class="btn btn--secondary btn--large">
+                                <i class="fas fa-play-circle"></i> Смотреть процесс
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-hero__image">
+                        <div class="service-hero__image-container">
+                            <img src="img/Image 14.png" alt="Процесс нанесения защитных пленок">
+                            <div class="image-badge">
+                                <i class="fas fa-microscope"></i>
+                                <span>Лабораторный контроль</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Быстрые факты -->
+        <section class="quick-facts">
+            <div class="container">
+                <div class="quick-facts__grid">
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">ICP-CVD</div>
+                            <div class="fact-card__label">Технология осаждения</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">±1%</div>
+                            <div class="fact-card__label">Равномерность толщины</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <i class="fas fa-temperature-high"></i>
+                        </div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">20-400°C</div>
+                            <div class="fact-card__label">Температурный режим</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">24-72 ч</div>
+                            <div class="fact-card__label">Срок выполнения</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Описание услуги -->
+        <section class="service-description">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Что такое нанесение защитных пленок?</h2>
+                    <p class="section-subtitle">Ключевой этап производства микроэлектронных компонентов</p>
+                </div>
+
+                <div class="service-description__content">
+                    <div class="description-text">
+                        <p><strong>Нанесение защитных пленок</strong> — это технологический процесс создания тонких слоев диэлектрических или проводящих материалов на поверхности кремниевых подложек для защиты от внешних воздействий и создания изолирующих
+                            слоев в полупроводниковых приборах.</p>
+
+                        <p>Мы специализируемся на плазмохимическом осаждении из газовой фазы (PECVD) с индуктивно-связанной плазмой (ICP), что обеспечивает:</p>
+
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Высокую плотность и адгезию пленок</li>
+                            <li><i class="fas fa-check"></i> Низкую температуру процесса (до 200°C)</li>
+                            <li><i class="fas fa-check"></i> Отличную равномерность по всей площади пластины</li>
+                            <li><i class="fas fa-check"></i> Минимальные механические напряжения</li>
+                            <li><i class="fas fa-check"></i> Возможность осаждения на чувствительные материалы</li>
+                        </ul>
+                    </div>
+
+                    <div class="description-image">
+                        <div class="deposition-scheme">
+                            <div class="scheme-layer scheme-substrate">
+                                <div class="layer-label">Кремниевая подложка</div>
+                            </div>
+                            <div class="scheme-layer scheme-oxide">
+                                <div class="layer-label">Термический SiO₂ (100 нм)</div>
+                            </div>
+                            <div class="scheme-layer scheme-nitride">
+                                <div class="layer-label">PECVD Si₃N₄ (200 нм)</div>
+                            </div>
+                            <div class="scheme-layer scheme-passivation">
+                                <div class="layer-label">Пассивация PECVD SiO₂ (500 нм)</div>
+                            </div>
+                            <div class="scheme-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #8B4513;"></span>
+                                    <span>Подложка Si</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #4682B4;"></span>
+                                    <span>SiO₂</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #32CD32;"></span>
+                                    <span>Si₃N₄</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color" style="background: #FFD700;"></span>
+                                    <span>Пассивация</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Этапы процесса -->
+        <section class="process-steps" id="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Этап 1: Формирование партии подложек и их подготовка</h2>
+                    <p class="section-subtitle">Полный цикл подготовки и нанесения защитных пленок</p>
+                </div>
+
+                <div class="process-timeline">
+                    <!-- Шаг 1 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <div class="step-number">01</div>
+                            <div class="step-title">Входной контроль подложек</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-description">
+                                <p>Тщательная проверка качества входящих кремниевых подложек с использованием современного измерительного оборудования:</p>
+                                <ul>
+                                    <li>Контроль геометрических параметров (толщина, плоскостность)</li>
+                                    <li>Измерение удельного сопротивления</li>
+                                    <li>Визуальный контроль дефектов поверхности</li>
+                                    <li>Проверка кристаллографической ориентации</li>
+                                </ul>
+                            </div>
+                            <div class="step-equipment">
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <h4>Olympus STRN7</h4>
+                                    <p>Установка контроля микроизображений</p>
+                                    <div class="equipment-specs">
+                                        <span><i class="fas fa-expand-alt"></i> Увеличение 1000x</span>
+                                        <span><i class="fas fa-ruler"></i> Точность 0.1 мкм</span>
+                                    </div>
+                                </div>
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <h4>Зондовая станция H6</h4>
+                                    <p>Измерение электрических параметров</p>
+                                    <div class="equipment-specs">
+                                        <span><i class="fas fa-bolt"></i> 6 зондов</span>
+                                        <span><i class="fas fa-temperature-low"></i> Нагрев до 300°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 2 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <div class="step-number">02</div>
+                            <div class="step-title">Очистка подложек</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-description">
+                                <p>Удаление органических и неорганических загрязнений с поверхности подложек перед нанесением пленок:</p>
+                                <ul>
+                                    <li>Ультразвуковая очистка в органических растворителях</li>
+                                    <li>Химическая очистка в растворах RCA</li>
+                                    <li>Плазменная активация поверхности</li>
+                                    <li>Удаление нативного оксида</li>
+                                </ul>
+                            </div>
+                            <div class="step-equipment">
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">
+                                        <i class="fas fa-tint"></i>
+                                    </div>
+                                    <h4>AC200-SE-CTM</h4>
+                                    <p>Настольная лабораторная центрифуга</p>
+                                    <div class="equipment-specs">
+                                        <span><i class="fas fa-cogs"></i> До 2000 об/мин</span>
+                                        <span><i class="fas fa-clock"></i> Программируемый таймер</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 3 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <div class="step-number">03</div>
+                            <div class="step-title">Отмывка подложек</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-description">
+                                <p>Тщательная промывка для удаления остатков химических реагентов и подготовка к осаждению:</p>
+                                <ul>
+                                    <li>Многостадийная промывка в деионизованной воде</li>
+                                    <li>Сушка в потоке азота высокой чистоты</li>
+                                    <li>Контроль чистоты поверхности</li>
+                                    <li>Хранение в чистой среде</li>
+                                </ul>
+                            </div>
+                            <div class="step-equipment">
+                                <div class="equipment-card">
+                                    <div class="equipment-icon">
+                                        <i class="fas fa-wind"></i>
+                                    </div>
+                                    <h4>AC200-SE-CTM</h4>
+                                    <p>Настольная лабораторная центрифуга</p>
+                                    <div class="equipment-specs">
+                                        <span><i class="fas fa-shield-alt"></i> Класс чистоты 100</span>
+                                        <span><i class="fas fa-tint"></i> DI вода 18 МОм·см</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шаг 4 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <div class="step-number">04</div>
+                            <div class="step-title">Нанесение защитной пленки</div>
+                        </div>
+                        <div class="step-content">
+                            <div class="step-description">
+                                <p>Плазмохимическое осаждение защитных и изолирующих слоев на подготовленные подложки:</p>
+                                <ul>
+                                    <li>Осаждение SiO₂ для изоляции и пассивации</li>
+                                    <li>Нанесение Si₃N₄ в качестве маски и барьера</li>
+                                    <li>Контроль толщины in-situ</li>
+                                    <li>Измерение оптических и электрических свойств</li>
+                                </ul>
+                            </div>
+                            <div class="step-equipment">
+                                <div class="equipment-card equipment-card--main">
+                                    <div class="equipment-icon">
+                                        <i class="fas fa-atom"></i>
+                                    </div>
+                                    <h4>ICPCVD-D200H</h4>
+                                    <p>Система плазмохимического осаждения</p>
+                                    <div class="equipment-specs">
+                                        <span><i class="fas fa-ruler-vertical"></i> Толщина 10 нм - 5 мкм</span>
+                                        <span><i class="fas fa-temperature-low"></i> Температура 20-400°C</span>
+                                        <span><i class="fas fa-tachometer-alt"></i> Скорость до 200 нм/мин</span>
+                                        <span><i class="fas fa-expand-arrows-alt"></i> Диаметр до 200 мм</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Типы пленок -->
+        <section class="film-types">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Типы наносимых пленок</h2>
+                    <p class="section-subtitle">Широкий спектр материалов для различных применений</p>
+                </div>
+
+                <div class="film-types__grid">
+                    <div class="film-card">
+                        <div class="film-card__header film-card__header--oxide">
+                            <h3>Диоксид кремния (SiO₂)</h3>
+                            <div class="film-formula">SiO₂</div>
+                        </div>
+                        <div class="film-card__content">
+                            <ul class="film-properties">
+                                <li><strong>Толщина:</strong> 20 нм - 2 мкм</li>
+                                <li><strong>Диэлектрическая проницаемость:</strong> 3.9</li>
+                                <li><strong>Пробивное напряжение:</strong> 10 МВ/см</li>
+                                <li><strong>Плотность:</strong> 2.2 г/см³</li>
+                            </ul>
+                            <div class="film-applications">
+                                <h4>Применения:</h4>
+                                <p>Изолирующие слои, маски для травления, пассивация поверхности, затворный диэлектрик</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film-card">
+                        <div class="film-card__header film-card__header--nitride">
+                            <h3>Нитрид кремния (Si₃N₄)</h3>
+                            <div class="film-formula">Si₃N₄</div>
+                        </div>
+                        <div class="film-card__content">
+                            <ul class="film-properties">
+                                <li><strong>Толщина:</strong> 50 нм - 1 мкм</li>
+                                <li><strong>Диэлектрическая проницаемость:</strong> 7.5</li>
+                                <li><strong>Пробивное напряжение:</strong> 8 МВ/см</li>
+                                <li><strong>Плотность:</strong> 3.1 г/см³</li>
+                            </ul>
+                            <div class="film-applications">
+                                <h4>Применения:</h4>
+                                <p>Маски для LOCOS, защитные барьеры, упрочняющие покрытия, оптические волноводы</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="film-card">
+                        <div class="film-card__header film-card__header--oxynitride">
+                            <h3>Оксинитрид кремния (SiON)</h3>
+                            <div class="film-formula">Si<sub>x</sub>O<sub>y</sub>N<sub>z</sub></div>
+                        </div>
+                        <div class="film-card__content">
+                            <ul class="film-properties">
+                                <li><strong>Толщина:</strong> 30 нм - 1.5 мкм</li>
+                                <li><strong>Диэлектрическая проницаемость:</strong> 4.5-6.5</li>
+                                <li><strong>Пробивное напряжение:</strong> 9 МВ/см</li>
+                                <li><strong>Плотность:</strong> 2.5-2.9 г/см³</li>
+                            </ul>
+                            <div class="film-applications">
+                                <h4>Применения:</h4>
+                                <p>Буферные слои, антиотражающие покрытия, регулируемые диэлектрики, волноводы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="service-benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Преимущества нашей услуги</h2>
+                    <p class="section-subtitle">Почему выбирают именно нас для нанесения защитных пленок</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Полный цикл контроля</h3>
+                        <p>Каждый этап контролируется современным измерительным оборудованием с документированием результатов</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Высокая воспроизводимость</h3>
+                        <p>Стабильные параметры от партии к партии благодаря автоматизации процессов</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Промышленные объемы</h3>
+                        <p>Возможность обработки больших партий подложек с сохранением качества</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Техническая поддержка</h3>
+                        <p>Консультации по выбору параметров и помощь в интерпретации результатов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма заказа -->
+        <section class="order-section" id="order-form">
+            <div class="container">
+                <div class="order-container">
+                    <div class="order-form">
+                        <h2 class="order-form__title">Заказать услугу нанесения пленок</h2>
+                        <p class="order-form__subtitle">Заполните форму, и наш специалист свяжется с вами для обсуждения деталей</p>
+
+                        <form class="order-form__content">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Ваше имя *</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Компания</label>
+                                    <input type="text" id="company">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="substrate">Тип подложки</label>
+                                <select id="substrate">
+                                    <option value="">Выберите тип подложки</option>
+                                    <option value="si">Кремний (Si)</option>
+                                    <option value="gaas">Арсенид галлия (GaAs)</option>
+                                    <option value="glass">Стекло</option>
+                                    <option value="sapphire">Сапфир</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="diameter">Диаметр, мм</label>
+                                    <input type="number" id="diameter" min="50" max="300">
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity">Количество, шт</label>
+                                    <input type="number" id="quantity" min="1">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="film-type">Тип пленки</label>
+                                <select id="film-type" multiple>
+                                    <option value="sio2">SiO₂ (Диоксид кремния)</option>
+                                    <option value="si3n4">Si₃N₄ (Нитрид кремния)</option>
+                                    <option value="sion">SiON (Оксинитрид кремния)</option>
+                                </select>
+                                <small>Удерживайте Ctrl для выбора нескольких</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="requirements">Дополнительные требования</label>
+                                <textarea id="requirements" rows="4" placeholder="Укажите желаемую толщину, свойства пленки, особые условия..."></textarea>
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn--primary btn--large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Отправить заявку
+                                </button>
+                                <div class="form-agreement">
+                                    Нажимая кнопку, вы соглашаетесь с
+                                    <a href="privacy.html">политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="order-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-clock"></i> Сроки выполнения</h3>
+                            <ul>
+                                <li>Пробная партия (1-10 шт): 3-5 рабочих дней</li>
+                                <li>Средняя партия (10-100 шт): 1-2 недели</li>
+                                <li>Крупная партия (100+ шт): 2-4 недели</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-file-contract"></i> Что вы получите</h3>
+                            <ul>
+                                <li>Обработанные подложки с нанесенными пленками</li>
+                                <li>Протокол измерений параметров пленок</li>
+                                <li>Паспорт качества с результатами контроля</li>
+                                <li>Консультацию по дальнейшей обработке</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-phone-alt"></i> Контакты отдела</h3>
+                            <div class="contact-info">
+                                <p><i class="fas fa-user"></i> Иван Петров, руководитель отдела</p>
+                                <p><i class="fas fa-phone"></i> +7 (812) 309-27-37 (доб. 203)</p>
+                                <p><i class="fas fa-envelope"></i> films@rb-bw.ru</p>
+                                <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Часто задаваемые вопросы</h2>
+                    <p class="section-subtitle">Ответы на популярные вопросы о нанесении защитных пленок</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Какое минимальное количество подложек можно обработать?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы работаем как с единичными образцами для НИОКР, так и с промышленными партиями. Минимальный заказ - 1 подложка. Для пробных образцов действуют специальные условия.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Какова точность контроля толщины пленки?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Мы используем эллипсометрию с точностью ±1 нм для тонких пленок и профайлометрию с точностью ±5 нм для толстых пленок. Все измерения документируются в протоколе.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Можно ли наносить пленки на структурированные подложки?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, наш процесс PECVD обеспечивает конформное покрытие с сохранением топологии. Степень конформности зависит от соотношения сторон структур.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Предоставляете ли вы услугу разработки технологического процесса?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, наши технологи могут разработать оптимальный процесс нанесения пленок под ваши конкретные требования, включая подбор режимов осаждения и контроль качества.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <!-- Контакты -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <a href="tel:+78123092737">+7 (812) 309-27-37</a>
+                                    <a href="tel:+78005556889">+7 (800) 555-68-89</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a>
+                                    <a href="mailto:films@rb-bw.ru">films@rb-bw.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Услуги -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Оборудование -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Оборудование</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="mounting-line.html"><i class="fas fa-chevron-right"></i> Линии монтажа</a></li>
+                            <li><a href="soldering-stations.html"><i class="fas fa-chevron-right"></i> Паяльные станции</a></li>
+                            <li><a href="consumables.html"><i class="fas fa-chevron-right"></i> Расходные материалы</a></li>
+                            <li><a href="service-equipment.html"><i class="fas fa-chevron-right"></i> Сервисное оборудование</a></li>
+                            <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль и диагностика</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Подписка -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                        <form class="site-footer__subscribe">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">
+                        © 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.
+                    </div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Модальное окно обратного звонка -->
+    <div class="modal" id="callback-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="callback-form">
+                <h3>Заказать обратный звонок</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Комментарий (необязательно)" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block">
+                        <i class="fas fa-phone-volume"></i>
+                        Заказать звонок
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/service-page.js"></script>
+    <script src="js/photolithography.js"></script>
+</body>
+
+</html>

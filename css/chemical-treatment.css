@@ -1,0 +1,339 @@
+/* chemical-treatment.css - стили для страницы химической обработки */
+
+
+/* Герой секция */
+
+.chemical-hero .service-hero__title {
+    background: linear-gradient(90deg, #FFA500, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Визуализация процесса */
+
+.chemical-process-visual {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.1);
+    border: 1px solid #e9d5ff;
+    text-align: center;
+}
+
+.process-stages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stage {
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 150px;
+    transition: all 0.3s ease;
+}
+
+.stage.dirty {
+    background: linear-gradient(135deg, #F3F4F6, #E5E7EB);
+    border: 2px dashed #9CA3AF;
+}
+
+.stage.cleaning {
+    background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+    border: 2px solid #8B5CF6;
+}
+
+.stage.clean {
+    background: linear-gradient(135deg, #D1FAE5, #A7F3D0);
+    border: 2px solid #10B981;
+}
+
+.stage-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stage.dirty .stage-icon {
+    color: #6B7280;
+}
+
+.stage.cleaning .stage-icon {
+    color: #8B5CF6;
+}
+
+.stage.clean .stage-icon {
+    color: #10B981;
+}
+
+.stage-text {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.stage-arrow {
+    color: #8B5CF6;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.chemical-bath {
+    width: 200px;
+    height: 120px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #E0E7FF, #C7D2FE);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #8B5CF6;
+}
+
+.bath-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    background: linear-gradient(to top, #8B5CF6, #A78BFA);
+    border-radius: 8px 8px 0 0;
+    animation: liquid-wave 3s ease-in-out infinite;
+}
+
+@keyframes liquid-wave {
+    0%,
+    100% {
+        height: 80%;
+    }
+    50% {
+        height: 85%;
+    }
+}
+
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: bubble-rise 4s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 12px;
+    height: 12px;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    left: 80%;
+    animation-delay: 2s;
+}
+
+@keyframes bubble-rise {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+/* Типы обработки */
+
+.treatment-types {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.treatment-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+.treatment-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.treatment-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #6D28D9;
+}
+
+.treatment-card p {
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.treatment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.treatment-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+    color: #4B5563;
+    position: relative;
+    padding-left: 25px;
+}
+
+.treatment-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #8B5CF6;
+}
+
+.treatment-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* Оборудование */
+
+.equipment-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.equipment-card {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.equipment-card:hover {
+    transform: translateY(-3px);
+    border-color: #8B5CF6;
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.1);
+}
+
+.equipment-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #8B5CF6, #A78BFA);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+}
+
+.equipment-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #6D28D9;
+}
+
+.equipment-card p {
+    color: #6B7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+    .process-stages {
+        flex-direction: column;
+    }
+    .stage-arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    .treatment-grid {
+        grid-template-columns: 1fr;
+    }
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .chemical-process-visual {
+        padding: 20px;
+    }
+    .stage {
+        min-width: 100%;
+    }
+    .chemical-bath {
+        width: 160px;
+        height: 100px;
+    }
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+    .treatment-card {
+        padding: 20px;
+    }
+}

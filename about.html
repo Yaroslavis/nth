@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - RB-BW.RU - Оборудование для монтажа печатных плат</title>
+    <meta name="description" content="RB-BW.RU - ведущий поставщик оборудования и услуг для микроэлектроники в России. Более 15 лет на рынке, собственные лаборатории, квалифицированные специалисты.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="site-header__submenu">
+                        <li><a href="film-deposition.html"><i class="fas fa-layer-group"></i><span>Нанесение пленок</span></a></li>
+                        <li><a href="photolithography.html"><i class="fas fa-camera-retro"></i><span>Фотолитография</span></a></li>
+                        <li><a href="etching.html"><i class="fas fa-water"></i><span>Травление</span></a></li>
+                        <li><a href="metallization.html"><i class="fas fa-atom"></i><span>Металлизация</span></a></li>
+                        <li><a href="chemical-treatment.html"><i class="fas fa-flask"></i><span>Хим обработка</span></a></li>
+                        <li><a href="quality-control.html"><i class="fas fa-search"></i><span>Контроль</span></a></li>
+                        <li><a href="packaging.html"><i class="fas fa-box"></i><span>Корпусирование</span></a></li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link active">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            <i class="fas fa-home"></i>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item" aria-current="page">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="about-page">
+        <!-- Герой-секция -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero__content">
+                    <div class="about-hero__text">
+                        <h1 class="about-hero__title">RB-BW.RU — технологии для микроэлектроники</h1>
+                        <p class="about-hero__subtitle">Более 15 лет мы обеспечиваем российские предприятия современным оборудованием и полным спектром технологических услуг в области микроэлектроники.</p>
+                        <div class="about-hero__stats">
+                            <div class="stat">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">лет на рынке</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">клиентов</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">специалистов</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">проектов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-hero__image">
+                        <div class="about-hero__image-container">
+                            <img src="img/natsio.jpg" alt="Здание компании RB-BW.RU">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Миссия и ценности -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h2>Наша миссия</h2>
+                        <p>Обеспечивать российские предприятия современными технологиями и оборудованием для микроэлектроники, способствуя развитию отечественной электронной промышленности и технологическому суверенитету страны.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h2>Наше видение</h2>
+                        <p>Стать ведущим технологическим партнером в области микроэлектроники в России, создавая полную цепочку услуг — от поставки оборудования до полного цикла производства электронных компонентов.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h2>Наши ценности</h2>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check"></i> Качество и надежность</li>
+                            <li><i class="fas fa-check"></i> Технологическая экспертиза</li>
+                            <li><i class="fas fa-check"></i> Ответственность перед клиентами</li>
+                            <li><i class="fas fa-check"></i> Инновации и развитие</li>
+                            <li><i class="fas fa-check"></i> Профессионализм команды</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История компании -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">История компании</h2>
+                    <p class="section-subtitle">Путь от небольшой компании до лидера рынка</p>
+                </div>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2008</div>
+                        <div class="timeline-content">
+                            <h3>Основание компании</h3>
+                            <p>Создание компании RB-BW.RU как поставщика оборудования для монтажа печатных плат. Начало работы с первыми российскими производителями электроники.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2012</div>
+                        <div class="timeline-content">
+                            <h3>Расширение ассортимента</h3>
+                            <p>Добавление в портфель оборудования для микроэлектроники: установки напыления, фотолитографии, травления. Открытие собственного сервисного центра.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3>Создание технологической лаборатории</h3>
+                            <p>Открытие собственной лаборатории микроэлектронных технологий. Начало предоставления услуг по нанесению пленок и фотолитографии.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-content">
+                            <h3>Запуск полного цикла услуг</h3>
+                            <p>Расширение лаборатории до полного цикла микроэлектронного производства. Добавление услуг металлизации, травления, корпусирования и контроля качества.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h3>Технологический прорыв</h3>
+                            <p>Внедрение технологий глубокого субмикронного производства. Получение сертификатов ISO 9001 и ISO/IEC 17025. Участие в государственных программах импортозамещения.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3>Современное состояние</h3>
+                            <p>Более 50 квалифицированных специалистов, собственные чистые помещения класса 100-1000, полный цикл услуг от проектирования до серийного производства.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Команда -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наша команда</h2>
+                    <p class="section-subtitle">Профессионалы с многолетним опытом в микроэлектронике</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Александр Петров</h3>
+                        <p class="member-position">Генеральный директор</p>
+                        <p class="member-bio">Кандидат технических наук, 20 лет опыта в микроэлектронике. Основатель компании.</p>
+                        <div class="member-contacts">
+                            <span><i class="fas fa-envelope"></i> petrov@rb-bw.ru</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Мария Смирнова</h3>
+                        <p class="member-position">Технический директор</p>
+                        <p class="member-bio">Доктор технических наук, автор 30+ научных работ, эксперт в области нанотехнологий.</p>
+                        <div class="member-contacts">
+                            <span><i class="fas fa-envelope"></i> smirnova@rb-bw.ru</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Дмитрий Иванов</h3>
+                        <p class="member-position">Директор по производству</p>
+                        <p class="member-bio">15 лет опыта в управлении производством микроэлектроники, сертифицированный специалист ISO 9001.</p>
+                        <div class="member-contacts">
+                            <span><i class="fas fa-envelope"></i> ivanov@rb-bw.ru</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Елена Кузнецова</h3>
+                        <p class="member-position">Руководитель отдела контроля качества</p>
+                        <p class="member-bio">Эксперт в области метрологии и дефектоскопии, 12 лет опыта в SEM/EDX анализе.</p>
+                        <div class="member-contacts">
+                            <span><i class="fas fa-envelope"></i> kuznetsova@rb-bw.ru</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Лаборатории и оборудование -->
+        <section class="labs-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши лаборатории</h2>
+                    <p class="section-subtitle">Современные чистые помещения и оборудование</p>
+                </div>
+                <div class="labs-grid">
+                    <div class="lab-card">
+                        <div class="lab-image">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="lab-content">
+                            <h3>Чистые помещения</h3>
+                            <p>Классы чистоты 100-1000 по ISO 14644-1. Контроль температуры, влажности, частиц.</p>
+                            <ul class="lab-features">
+                                <li><i class="fas fa-check"></i> Класс 100 - 10 м²</li>
+                                <li><i class="fas fa-check"></i> Класс 1000 - 50 м²</li>
+                                <li><i class="fas fa-check"></i> 24/7 мониторинг</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-image">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="lab-content">
+                            <h3>Технологическое оборудование</h3>
+                            <p>Полный цикл микроэлектронного производства от напыления до корпусирования.</p>
+                            <ul class="lab-features">
+                                <li><i class="fas fa-check"></i> Установки PVD/CVD</li>
+                                <li><i class="fas fa-check"></i> Фотолитография</li>
+                                <li><i class="fas fa-check"></i> Плазменное травление</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lab-card">
+                        <div class="lab-image">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="lab-content">
+                            <h3>Контроль качества</h3>
+                            <p>Метрологическая лаборатория с оборудованием для точных измерений и анализа.</p>
+                            <ul class="lab-features">
+                                <li><i class="fas fa-check"></i> СЭМ микроскопы</li>
+                                <li><i class="fas fa-check"></i> Профилометры</li>
+                                <li><i class="fas fa-check"></i> Рентгеновский контроль</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сертификаты -->
+        <section class="certificates-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Сертификаты и лицензии</h2>
+                    <p class="section-subtitle">Подтверждение качества и компетентности</p>
+                </div>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>ISO 9001:2015</h3>
+                        <p>Система менеджмента качества</p>
+                        <div class="cert-number">Сертификат № RU-12345</div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>ISO/IEC 17025:2017</h3>
+                        <p>Компетентность испытательной лаборатории</p>
+                        <div class="cert-number">Аккредитация № RA.RU.123456</div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Лицензия ФСТЭК</h3>
+                        <p>Работа со сведениями, составляющими гостайну</p>
+                        <div class="cert-number">Лицензия № 1234567890</div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Членство в ассоциациях</h3>
+                        <p>Ассоциация разработчиков и производителей электроники</p>
+                        <div class="cert-number">Членство № 2024-045</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Партнеры -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши партнеры</h2>
+                    <p class="section-subtitle">Работаем с ведущими российскими и международными компаниями</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-logo"><i class="fas fa-university"></i><span>НИИ Электроники</span></div>
+                    <div class="partner-logo"><i class="fas fa-rocket"></i><span>Роскосмос</span></div>
+                    <div class="partner-logo"><i class="fas fa-satellite"></i><span>Ростех</span></div>
+                    <div class="partner-logo"><i class="fas fa-microchip"></i><span>Микрон</span></div>
+                    <div class="partner-logo"><i class="fas fa-bolt"></i><span>Росэлектроника</span></div>
+                    <div class="partner-logo"><i class="fas fa-graduation-cap"></i><span>МФТИ</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <h2>Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>Санкт-Петербург, ул. Технологическая, 25</p>
+                                <p>Бизнес-центр "Технопарк", 5 этаж</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефоны</h4>
+                                <p><a href="tel:+78123092737">+7 (812) 309-27-37</a></p>
+                                <p><a href="tel:+78005556889">+7 (800) 555-68-89</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a></p>
+                                <p><a href="mailto:sales@rb-bw.ru">sales@rb-bw.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Часы работы</h4>
+                                <p>Пн-Пт: 9:00-18:00</p>
+                                <p>Сб-Вс: выходной</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Карта расположения компании</p>
+                            <p>Санкт-Петербург, ул. Технологическая, 25</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact"><i class="fas fa-phone-alt"></i>
+                                <div><a href="tel:+78123092737">+7 (812) 309-27-37</a><a href="tel:+78005556889">+7 (800) 555-68-89</a></div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-envelope"></i>
+                                <div><a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a></div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">О компании</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="about.html" class="active"><i class="fas fa-chevron-right"></i> О нас</a></li>
+                            <li><a href="history.html"><i class="fas fa-chevron-right"></i> История</a></li>
+                            <li><a href="team.html"><i class="fas fa-chevron-right"></i> Команда</a></li>
+                            <li><a href="labs.html"><i class="fas fa-chevron-right"></i> Лаборатории</a></li>
+                            <li><a href="certificates.html"><i class="fas fa-chevron-right"></i> Сертификаты</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="chemical-treatment.html"><i class="fas fa-chevron-right"></i> Хим обработка</a></li>
+                            <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                        <form class="site-footer__subscribe"><input type="email" placeholder="Ваш email" required><button type="submit"><i class="fas fa-paper-plane"></i></button></form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">© 2008-2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.</div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+</body>
+
+</html>

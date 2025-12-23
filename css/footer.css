@@ -1,0 +1,276 @@
+/* footer.css */
+
+.site-footer {
+    background: var(--primary-color);
+    color: var(--text-main);
+    margin-top: 80px;
+}
+
+.site-footer__main {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.site-footer__col {
+    min-width: 0;
+}
+
+.site-footer__title {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: var(--text-main);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.site-footer__title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--accent-yellow);
+    border-radius: 2px;
+}
+
+
+/* Контакты */
+
+.site-footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-contact i {
+    color: var(--accent-yellow);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.footer-contact a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-contact a:hover {
+    color: var(--accent-yellow);
+}
+
+.footer-contact p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+
+/* Меню футера */
+
+.site-footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer__menu li {
+    margin-bottom: 12px;
+}
+
+.site-footer__menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 15px;
+}
+
+.site-footer__menu a:hover {
+    color: var(--accent-yellow);
+    transform: translateX(5px);
+}
+
+.site-footer__menu i {
+    font-size: 10px;
+    color: var(--accent-yellow);
+}
+
+
+/* Подписка */
+
+.site-footer__text {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.site-footer__subscribe {
+    display: flex;
+    margin-bottom: 25px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.site-footer__subscribe input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.site-footer__subscribe button {
+    background: var(--accent-yellow);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.site-footer__subscribe button:hover {
+    background: #ffb300;
+}
+
+
+/* Социальные сети */
+
+.site-footer__social {
+    display: flex;
+    gap: 15px;
+}
+
+.site-footer__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.site-footer__social a:hover {
+    background: var(--accent-yellow);
+    color: #000;
+    transform: translateY(-3px);
+}
+
+
+/* Нижняя часть футера */
+
+.site-footer__bottom {
+    padding: 25px 0;
+    background: var(--secondary-color);
+}
+
+.site-footer__bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.site-footer__copyright {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.site-footer__links {
+    display: flex;
+    gap: 30px;
+}
+
+.site-footer__links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.site-footer__links a:hover {
+    color: var(--accent-yellow);
+}
+
+
+/* footer.css */
+
+.site-footer {
+    background: var(--primary-color);
+    /* Основной фон */
+    color: var(--text-main);
+    margin-top: 80px;
+}
+
+.site-footer__main {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--primary-color);
+    /* Явно задаем фон */
+}
+
+
+/* ... остальной CSS без изменений ... */
+
+.site-footer__bottom {
+    padding: 25px 0;
+    background: var(--secondary-color) !important;
+    /* Важно для нижней части */
+}
+
+
+/* Адаптивность футера */
+
+@media (max-width: 768px) {
+    .site-footer__main {
+        padding: 40px 0;
+    }
+    .site-footer__grid {
+        gap: 30px;
+    }
+    .site-footer__bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-footer__links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-footer__title {
+        font-size: 1.2rem;
+    }
+    .footer-contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .site-footer__social {
+        justify-content: center;
+    }
+}

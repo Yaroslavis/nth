@@ -1,0 +1,497 @@
+/* photolithography.css - дополнительные стили для страницы фотолитографии */
+
+
+/* Визуализация процесса фотолитографии */
+
+.photolithography-process {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.process-step-visual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.step-visual {
+    text-align: center;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--accent-blue), #21cbf3);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 15px;
+}
+
+.step-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.step-visual-content {
+    height: 120px;
+    position: relative;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.substrate {
+    height: 30px;
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.photoresist {
+    height: 20px;
+    background: linear-gradient(135deg, #FFA500, #FFB733);
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.photoresist.exposed {
+    background: linear-gradient(135deg, #FF6347, #FF7F50);
+}
+
+.photoresist.developed {
+    height: 15px;
+    background: linear-gradient(135deg, #FFA500, #FFB733);
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.mask {
+    height: 25px;
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+.light-beam {
+    height: 40px;
+    width: 80%;
+    margin: 0 auto 10px;
+    background: linear-gradient(to bottom, rgba(50, 205, 50, 0.8), transparent);
+    border-radius: 4px;
+    position: relative;
+}
+
+.light-beam::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: repeating-linear-gradient( 90deg, transparent, transparent 5px, rgba(255, 255, 255, 0.3) 5px, rgba(255, 255, 255, 0.3) 10px);
+}
+
+.process-legend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+
+/* Типы литографии */
+
+.lithography-types {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.lithography-types__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.lithography-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-light);
+    transition: var(--transition);
+}
+
+.lithography-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow-medium);
+}
+
+.lithography-card__header {
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.lithography-card__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), transparent);
+}
+
+.lithography-card__header--projection {
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+}
+
+.lithography-card__header--contact {
+    background: linear-gradient(135deg, #32CD32, #50E350);
+}
+
+.lithography-card__header--e-beam {
+    background: linear-gradient(135deg, #9C27B0, #BA68C8);
+}
+
+.lithography-card__header h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.lithography-resolution {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.lithography-card__content {
+    padding: 30px;
+}
+
+.lithography-card__description {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.lithography-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.lithography-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.lithography-features i {
+    color: var(--accent-green);
+    font-size: 12px;
+}
+
+.lithography-equipment h4 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.lithography-equipment p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Вкладки фоторезистов */
+
+.photoresists-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.photoresists-tabs {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.tabs-header {
+    display: flex;
+    background: var(--primary-color);
+    overflow-x: auto;
+}
+
+.tab-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.tab-btn.active {
+    background: var(--accent-yellow);
+    color: #000;
+}
+
+.tabs-content {
+    padding: 40px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.photoresist-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.photoresist-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.photoresist-description p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.photoresist-properties {
+    list-style: none;
+    padding: 0;
+}
+
+.photoresist-properties li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photoresist-properties li:last-child {
+    border-bottom: none;
+}
+
+.photoresist-properties strong {
+    color: var(--primary-color);
+}
+
+.photoresist-applications h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.photoresist-applications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.photoresist-applications li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.photoresist-applications li:last-child {
+    border-bottom: none;
+}
+
+
+/* Контроль качества */
+
+.quality-control {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.quality-control__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.qc-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-light);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.qc-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow-medium);
+}
+
+.qc-card__icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, var(--accent-blue), #21cbf3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qc-card__icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.qc-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.qc-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.qc-equipment {
+    font-size: 14px;
+    color: #555;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.qc-equipment strong {
+    color: var(--primary-color);
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 992px) {
+    .process-step-visual {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .lithography-types__grid {
+        grid-template-columns: 1fr;
+    }
+    .photoresist-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs-header {
+        flex-direction: column;
+    }
+    .tab-btn {
+        min-width: 100%;
+    }
+    .quality-control__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .step-visual-content {
+        height: 100px;
+    }
+    .lithography-card__header {
+        padding: 20px;
+    }
+    .lithography-card__content {
+        padding: 20px;
+    }
+    .tabs-content {
+        padding: 20px;
+    }
+}

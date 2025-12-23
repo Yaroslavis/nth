@@ -1,0 +1,651 @@
+/* metallization.css - стили для страницы металлизации */
+
+
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
+
+
+/* Герой секция для металлизации */
+
+.metallization-hero .service-hero__title {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ===== КОМПАКТНАЯ ВИЗУАЛИЗАЦИЯ ПРОЦЕССА МЕТАЛЛИЗАЦИИ ===== */
+
+.metallization-process-compact {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.08);
+    border: 1px solid #fef3e2;
+}
+
+.process-flow {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.process-step-compact {
+    flex: 1;
+    min-width: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.step-header-compact {
+    margin-bottom: 20px;
+}
+
+.step-number-compact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #333;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.step-title-compact {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.step-desc {
+    font-size: 0.85rem;
+    color: #718096;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.step-visual-compact {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px 10px;
+    background: #fffaf0;
+    border-radius: 10px;
+    border: 1px solid #fed7aa;
+}
+
+.material-stack {
+    width: 120px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.material-layer {
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.material-layer.substrate {
+    height: 25px;
+    background: linear-gradient(135deg, #4a5568, #718096);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.material-layer.metal-layer {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.material-layer.metal-layer.growing {
+    animation: metal-growing 3s ease-in-out infinite;
+    height: 10px;
+}
+
+@keyframes metal-growing {
+    0% {
+        height: 2px;
+        opacity: 0.5;
+    }
+    50% {
+        height: 8px;
+        opacity: 0.8;
+    }
+    100% {
+        height: 15px;
+        opacity: 1;
+    }
+}
+
+.material-layer.metal-layer.complete {
+    height: 15px;
+    margin-bottom: 5px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    position: relative;
+}
+
+
+/* Анимация металлизации */
+
+.metallization-active {
+    position: relative;
+    overflow: hidden;
+}
+
+.metal-vapor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3) 0%, rgba(255, 165, 0, 0.5) 30%, transparent 70%);
+    animation: vapor-pulse 2s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes vapor-pulse {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+
+/* Металлический блеск */
+
+.metal-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient( 90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shine 3s infinite;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+
+/* Стрелки процесса */
+
+.process-arrow-compact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: #FFD700;
+    opacity: 0.6;
+}
+
+
+/* Легенда */
+
+.legend-compact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #fed7aa;
+}
+
+.legend-item-compact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #fffaf0;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4a5568;
+    transition: all 0.2s ease;
+}
+
+.legend-item-compact:hover {
+    background: #feebc8;
+    transform: translateY(-1px);
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.substrate-dot {
+    background: linear-gradient(135deg, #4a5568, #718096);
+}
+
+.metal-dot {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    position: relative;
+    overflow: hidden;
+}
+
+.metal-dot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: dot-shimmer 2s infinite;
+}
+
+.vapor-dot {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    opacity: 0.7;
+    animation: vapor-glow 1.5s infinite alternate;
+}
+
+@keyframes dot-shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes vapor-glow {
+    0% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+
+/* ===== ТИПЫ МЕТАЛЛИЗАЦИИ ===== */
+
+.metallization-types {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fffaf0 0%, #feebc8 100%);
+}
+
+.metallization-types__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.metallization-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metallization-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+}
+
+.metallization-card__header {
+    padding: 30px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.metallization-card__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), transparent);
+}
+
+.metallization-card__header--pvd {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+}
+
+.metallization-card__header--cvd {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.metallization-card__header--electro {
+    background: linear-gradient(135deg, #FBBF24, #F59E0B);
+}
+
+.metallization-card__header h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.metallization-resolution {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.metallization-card__content {
+    padding: 30px;
+}
+
+.metallization-card__description {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.metallization-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.metallization-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.metallization-features i {
+    color: #10B981;
+    font-size: 12px;
+}
+
+.metallization-materials,
+.metallization-equipment {
+    margin-bottom: 20px;
+}
+
+.metallization-materials h4,
+.metallization-equipment h4 {
+    color: #D97706;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.metallization-materials p,
+.metallization-equipment p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ===== МАТЕРИАЛЫ И ПОКРЫТИЯ ===== */
+
+.materials-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.materials-tabs {
+    background: #fffaf0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
+.materials-tabs .tabs-header {
+    display: flex;
+    background: #F59E0B;
+    overflow-x: auto;
+}
+
+.materials-tabs .tab-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.materials-tabs .tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.materials-tabs .tab-btn.active {
+    background: #D97706;
+    color: white;
+}
+
+.materials-tabs .tabs-content {
+    padding: 40px;
+}
+
+.materials-tabs .tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.materials-tabs .tab-pane.active {
+    display: block;
+}
+
+.material-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.material-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #D97706;
+}
+
+.material-description p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.material-properties {
+    list-style: none;
+    padding: 0;
+}
+
+.material-properties li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-properties li:last-child {
+    border-bottom: none;
+}
+
+.material-properties strong {
+    color: #D97706;
+}
+
+.material-applications h4 {
+    color: #D97706;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.material-applications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.material-applications li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.material-applications li:last-child {
+    border-bottom: none;
+}
+
+
+/* ===== КОНТРОЛЬ КАЧЕСТВА ДЛЯ МЕТАЛЛИЗАЦИИ ===== */
+
+.quality-control .qc-card__icon {
+    background: linear-gradient(135deg, #FFD700, #F59E0B);
+}
+
+
+/* ===== СПЕЦИФИЧНЫЕ АНИМАЦИИ ДЛЯ МЕТАЛЛИЗАЦИИ ===== */
+
+@keyframes metal-deposition {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.metal-deposition-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.metal-deposition-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #FFD700, transparent);
+    animation: metal-deposition 2s linear infinite;
+}
+
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 992px) {
+    .metallization-types__grid {
+        grid-template-columns: 1fr;
+    }
+    .material-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .materials-tabs .tabs-header {
+        flex-direction: column;
+    }
+    .materials-tabs .tab-btn {
+        min-width: 100%;
+    }
+    .process-flow {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .process-step-compact {
+        padding: 0;
+    }
+    .process-arrow-compact {
+        transform: rotate(90deg);
+        padding: 10px 0;
+    }
+    .step-visual-compact {
+        height: 100px;
+    }
+    .material-stack {
+        width: 100px;
+    }
+    .legend-compact {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .legend-item-compact {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .metallization-card__header {
+        padding: 20px;
+    }
+    .metallization-card__content {
+        padding: 20px;
+    }
+    .materials-tabs .tabs-content {
+        padding: 20px;
+    }
+    .metallization-process-compact {
+        padding: 20px;
+    }
+    .step-visual-compact {
+        height: 90px;
+        padding: 10px;
+    }
+    .material-stack {
+        width: 90px;
+    }
+    .material-layer.substrate {
+        height: 20px;
+    }
+    .material-layer.metal-layer.complete {
+        height: 12px;
+    }
+    .step-number-compact {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    .step-title-compact {
+        font-size: 0.95rem;
+    }
+    .step-desc {
+        font-size: 0.8rem;
+    }
+}

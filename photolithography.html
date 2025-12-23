@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-BW.RU - Оборудование для монтажа печатных плат</title>
+    <meta name="description" content="Профессиональное оборудование для монтажа печатных плат. Линии монтажа, паяльные станции, расходные материалы.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/photolithography.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<!-- Шапка сайта -->
+<header class="site-header">
+    <div class="site-header__top">
+        <div class="site-header__logo-wrap">
+            <a href="index.html" class="site-header__logo-link">
+                <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+            </a>
+            <div class="site-header__brand">
+                <div class="site-header__brand-name">RB-BW.RU</div>
+                <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+            </div>
+        </div>
+
+        <form class="site-header__search" action="/search" method="get">
+            <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+            <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <div class="site-header__right-group">
+            <div class="site-header__contacts">
+                <div class="site-header__phones">
+                    <a href="tel:+78123092737" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (812) 309-27-37</span>
+                    </a>
+                    <a href="tel:+78005556889" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+7 (800) 555-68-89</span>
+                    </a>
+                </div>
+                <button class="site-header__callback-btn" type="button">
+                    <i class="fas fa-phone-volume"></i>
+                    <span>Заказать звонок</span>
+                </button>
+            </div>
+
+            <div class="site-header__cart">
+                <a href="cart.html" class="cart-link" aria-label="Корзина">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+
+            <div class="site-header__user">
+                <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+
+        <button class="site-header__burger" type="button" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <nav class="site-header__nav">
+        <ul class="site-header__menu">
+            <li class="site-header__menu-item site-header__menu-item--has-sub">
+                <button class="site-header__menu-link" type="button" aria-expanded="false">
+                    <i class="fas fa-cogs"></i>
+                    <span>Услуги</span>
+                    <i class="fas fa-chevron-down dropdown-icon"></i>
+                </button>
+                <ul class="site-header__submenu">
+                    <li>
+                        <a href="film-deposition.html">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Нанесение пленок</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="photolithography.html">
+                            <i class="fas fa-camera-retro"></i>
+                            <span>Фотолитография</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="etching.html">
+                            <i class="fas fa-water"></i>
+                            <span>Травление</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="metallization.html">
+                            <i class="fas fa-atom"></i>
+                            <span>Металлизация</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chemical-treatment.html">
+                            <i class="fas fa-flask"></i>
+                            <span>Хим обработка</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quality-control.html">
+                            <i class="fas fa-search"></i>
+                            <span>Контроль</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="packaging.html">
+                            <i class="fas fa-box"></i>
+                            <span>Корпусирование</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="site-header__menu-item">
+                <a href="about.html" class="site-header__menu-link">
+                    <i class="fas fa-building"></i>
+                    <span>О компании</span>
+                </a>
+            </li>
+            <li class="site-header__menu-item">
+                <a href="service.html" class="site-header__menu-link">
+                    <i class="fas fa-headset"></i>
+                    <span>Заказать сервис</span>
+                </a>
+            </li>
+            <li class="site-header__menu-item">
+                <a href="training.html" class="site-header__menu-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Обучение</span>
+                </a>
+            </li>
+            <li class="site-header__menu-item">
+                <a href="news.html" class="site-header__menu-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Новости</span>
+                </a>
+            </li>
+            <li class="site-header__menu-item">
+                <a href="projects.html" class="site-header__menu-link">
+                    <i class="fas fa-star"></i>
+                    <span>Проекты и отзывы</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Хлебные крошки -->
+<div class="breadcrumbs">
+    <div class="container">
+        <nav aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">
+                        <i class="fas fa-home"></i>
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="services.html" class="breadcrumbs__link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item" aria-current="page">
+                    <i class="fas fa-camera-retro"></i>
+                    <span>Фотолитография</span>
+                </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!-- Основное содержимое -->
+<main class="service-page">
+    <!-- Герой-секция услуги -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero__content">
+                <div class="service-hero__text">
+                    <h1 class="service-hero__title">Фотолитография для микроэлектроники</h1>
+                    <p class="service-hero__subtitle">Создание прецизионных микроструктур с разрешением до 0.35 мкм. Проекционная, контактная и электронно-лучевая литография.</p>
+                    <div class="service-hero__features">
+                        <div class="feature-tag">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Разрешение до 0.35 мкм</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Выравнивание ±0.1 мкм</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Диаметр пластин до 200 мм</span>
+                        </div>
+                    </div>
+                    <div class="service-hero__actions">
+                        <a href="#order-form" class="btn btn--primary btn--large">
+                            <i class="fas fa-calendar-check"></i> Заказать услугу
+                        </a>
+                        <a href="#process" class="btn btn--secondary btn--large">
+                            <i class="fas fa-play-circle"></i> Смотреть процесс
+                        </a>
+                    </div>
+                </div>
+                <div class="service-hero__image">
+                    <div class="service-hero__image-container">
+                        <img src="img/Image 15.png" alt="Процесс фотолитографии">
+                        <div class="image-badge">
+                            <i class="fas fa-microscope"></i>
+                            <span>Контроль CD-SEM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрые факты -->
+    <section class="quick-facts">
+        <div class="container">
+            <div class="quick-facts__grid">
+                <div class="fact-card">
+                    <div class="fact-card__icon">
+                        <i class="fas fa-ruler"></i>
+                    </div>
+                    <div class="fact-card__content">
+                        <div class="fact-card__value">0.35 мкм</div>
+                        <div class="fact-card__label">Минимальное разрешение</div>
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-card__icon">
+                        <i class="fas fa-expand-alt"></i>
+                    </div>
+                    <div class="fact-card__content">
+                        <div class="fact-card__value">±0.1 мкм</div>
+                        <div class="fact-card__label">Точность выравнивания</div>
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-card__icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="fact-card__content">
+                        <div class="fact-card__value">200 мм</div>
+                        <div class="fact-card__label">Диаметр пластины</div>
+                    </div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-card__icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="fact-card__content">
+                        <div class="fact-card__value">24-96 ч</div>
+                        <div class="fact-card__label">Срок выполнения</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Описание услуги -->
+    <section class="service-description">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Что такое фотолитография?</h2>
+                <p class="section-subtitle">Ключевой технологический процесс создания микроэлектронных схем</p>
+            </div>
+
+            <div class="service-description__content">
+                <div class="description-text">
+                    <p><strong>Фотолитография</strong> — это процесс формирования рисунка на поверхности подложки с использованием светочувствительных материалов (фоторезистов) и фотошаблонов. Это основа микроэлектронного производства, позволяющая создавать
+                        структуры с нанометровыми размерами.</p>
+
+                    <p>Мы предоставляем полный цикл фотолитографических услуг, включая:</p>
+
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Подготовку и очистку подложек</li>
+                        <li><i class="fas fa-check"></i> Нанесение фоторезиста (спин-коутинг)</li>
+                        <li><i class="fas fa-check"></i> Мягкий отжиг (pre-bake)</li>
+                        <li><i class="fas fa-check"></i> Экспонирование через фотошаблон</li>
+                        <li><i class="fas fa-check"></i> Проявление и жесткий отжиг (post-bake)</li>
+                        <li><i class="fas fa-check"></i> Контроль качества и измерение параметров</li>
+                    </ul>
+                </div>
+
+                <div class="description-image">
+                    <div class="photolithography-process">
+                        <div class="process-step-visual">
+                            <div class="step-visual">
+                                <div class="step-number">1</div>
+                                <div class="step-title">Нанесение фоторезиста</div>
+                                <div class="step-visual-content">
+                                    <div class="substrate">Подложка</div>
+                                    <div class="photoresist">Фоторезист</div>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <div class="step-number">2</div>
+                                <div class="step-title">Экспонирование</div>
+                                <div class="step-visual-content">
+                                    <div class="mask">Фотошаблон</div>
+                                    <div class="light-beam"></div>
+                                    <div class="substrate">Подложка</div>
+                                    <div class="photoresist exposed">Экспонированный резист</div>
+                                </div>
+                            </div>
+                            <div class="step-visual">
+                                <div class="step-number">3</div>
+                                <div class="step-title">Проявление</div>
+                                <div class="step-visual-content">
+                                    <div class="substrate">Подложка</div>
+                                    <div class="photoresist developed">Рисунок</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="process-legend">
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #8B4513;"></span>
+                                <span>Кремниевая подложка</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #FFA500;"></span>
+                                <span>Фоторезист</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #4682B4;"></span>
+                                <span>Фотошаблон</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background: #32CD32;"></span>
+                                <span>Световой поток</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Типы фотолитографии -->
+    <section class="lithography-types">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Типы фотолитографии</h2>
+                <p class="section-subtitle">Мы предоставляем различные методы литографии под разные задачи</p>
+            </div>
+
+            <div class="lithography-types__grid">
+                <div class="lithography-card">
+                    <div class="lithography-card__header lithography-card__header--projection">
+                        <h3>Проекционная литография</h3>
+                        <div class="lithography-resolution">0.35-1.0 мкм</div>
+                    </div>
+                    <div class="lithography-card__content">
+                        <div class="lithography-card__description">
+                            <p>Использование оптической системы для проецирования уменьшенного изображения фотошаблона на подложку. Идеально для массового производства.</p>
+                        </div>
+                        <ul class="lithography-features">
+                            <li><i class="fas fa-check"></i> Высокая производительность</li>
+                            <li><i class="fas fa-check"></i> Минимальный износ шаблонов</li>
+                            <li><i class="fas fa-check"></i> Возможность ступенчато-повторного экспонирования</li>
+                            <li><i class="fas fa-check"></i> Автоматическое выравнивание</li>
+                        </ul>
+                        <div class="lithography-equipment">
+                            <h4>Оборудование:</h4>
+                            <p>Stepper ASML PAS 5500, Canon FPA-3000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lithography-card">
+                    <div class="lithography-card__header lithography-card__header--contact">
+                        <h3>Контактная литография</h3>
+                        <div class="lithography-resolution">0.5-2.0 мкм</div>
+                    </div>
+                    <div class="lithography-card__content">
+                        <div class="lithography-card__description">
+                            <p>Прямой контакт фотошаблона с подложкой. Обеспечивает высокое разрешение, но требует тщательного ухода за шаблонами.</p>
+                        </div>
+                        <ul class="lithography-features">
+                            <li><i class="fas fa-check"></i> Высокое разрешение</li>
+                            <li><i class="fas fa-check"></i> Простота процесса</li>
+                            <li><i class="fas fa-check"></i> Низкая стоимость для мелких серий</li>
+                            <li><i class="fas check"></i> Подходит для НИОКР</li>
+                        </ul>
+                        <div class="lithography-equipment">
+                            <h4>Оборудование:</h4>
+                            <p>Karl Suss MA6, EVG 620</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lithography-card">
+                    <div class="lithography-card__header lithography-card__header--e-beam">
+                        <h3>Электронно-лучевая литография</h3>
+                        <div class="lithography-resolution">10-100 нм</div>
+                    </div>
+                    <div class="lithography-card__content">
+                        <div class="lithography-card__description">
+                            <p>Использование сфокусированного электронного пучка для прямого рисования на фоторезисте. Максимальное разрешение для нанотехнологий.</p>
+                        </div>
+                        <ul class="lithography-features">
+                            <li><i class="fas fa-check"></i> Наноразмерное разрешение</li>
+                            <li><i class="fas fa-check"></i> Бесшаблонная технология</li>
+                            <li><i class="fas fa-check"></i> Гибкость в проектировании</li>
+                            <li><i class="fas fa-check"></i> Идеально для прототипирования</li>
+                        </ul>
+                        <div class="lithography-equipment">
+                            <h4>Оборудование:</h4>
+                            <p>Raith EBPG 5200, JEOL JBX-6300FS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Этапы процесса -->
+    <section class="process-steps" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Технологический процесс фотолитографии</h2>
+                <p class="section-subtitle">Полный цикл от подготовки подложки до контроля качества</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Шаг 1 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">01</div>
+                        <div class="step-title">Подготовка подложки</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Тщательная очистка и подготовка поверхности подложки для обеспечения адгезии фоторезиста:</p>
+                            <ul>
+                                <li>Ультразвуковая очистка в ацетоне и изопропаноле</li>
+                                <li>Плазменная активация поверхности</li>
+                                <li>Нанесение праймера для улучшения адгезии</li>
+                                <li>Контроль чистоты и гидрофобности поверхности</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <h4>Плазменный активатор</h4>
+                                <p>Активация поверхности</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-bolt"></i> Мощность 300 Вт</span>
+                                    <span><i class="fas fa-wind"></i> Кислородная плазма</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">02</div>
+                        <div class="step-title">Нанесение фоторезиста</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Равномерное нанесение светочувствительного материала (фоторезиста) методом спин-коутинга:</p>
+                            <ul>
+                                <li>Выбор типа фоторезиста (позитивный/негативный)</li>
+                                <li>Контроль толщины (0.5-2.0 мкм)</li>
+                                <li>Равномерность покрытия ±2%</li>
+                                <li>Автоматическая дозировка и распределение</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-sync-alt"></i>
+                                </div>
+                                <h4>Спин-коутер</h4>
+                                <p>Нанесение фоторезиста</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-tachometer-alt"></i> 500-6000 об/мин</span>
+                                    <span><i class="fas fa-ruler"></i> Толщина 0.5-2 мкм</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">03</div>
+                        <div class="step-title">Мягкий отжиг (Pre-bake)</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Удаление растворителя и стабилизация фоторезиста перед экспонированием:</p>
+                            <ul>
+                                <li>Температура 90-120°C</li>
+                                <li>Время 60-90 секунд</li>
+                                <li>Равномерный нагрев</li>
+                                <li>Контроль толщины после отжига</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-thermometer-half"></i>
+                                </div>
+                                <h4>Горячая плита</h4>
+                                <p>Термообработка</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-temperature-high"></i> До 250°C</span>
+                                    <span><i class="fas fa-clock"></i> Точность ±1°C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Шаг 4 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">04</div>
+                        <div class="step-title">Экспонирование</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Формирование скрытого изображения в фоторезисте с использованием фотошаблона:</p>
+                            <ul>
+                                <li>Длина волны: i-line (365 нм), g-line (436 нм)</li>
+                                <li>Доза экспонирования: 100-300 мДж/см²</li>
+                                <li>Автоматическое выравнивание</li>
+                                <li>Контроль фокусировки</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card equipment-card--main">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <h4>Степпер ASML PAS 5500</h4>
+                                <p>Проекционный алографер</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-ruler"></i> Разрешение 0.35 мкм</span>
+                                    <span><i class="fas fa-expand-alt"></i> Поле 22×22 мм</span>
+                                    <span><i class="fas fa-bullseye"></i> Выравнивание ±0.1 мкм</span>
+                                    <span><i class="fas fa-sync-alt"></i> Производительность 60 вф/ч</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Шаг 5 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">05</div>
+                        <div class="step-title">Проявление</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Удаление экспонированных (или неэкспонированных) областей фоторезиста для формирования рисунка:</p>
+                            <ul>
+                                <li>Иммерсионное или спрей-проявление</li>
+                                <li>Контроль времени и температуры</li>
+                                <li>Использование TMAH или специальных разработчиков</li>
+                                <li>Промывка в деионизованной воде</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-shower"></i>
+                                </div>
+                                <h4>Проявительная станция</h4>
+                                <p>Проявление фоторезиста</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-tint"></i> TMAH 2.38%</span>
+                                    <span><i class="fas fa-clock"></i> Время 60 сек</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Шаг 6 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">06</div>
+                        <div class="step-title">Жесткий отжиг (Post-bake)</div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-description">
+                            <p>Упрочнение структуры фоторезиста для последующих технологических операций:</p>
+                            <ul>
+                                <li>Температура 120-140°C</li>
+                                <li>Время 2-5 минут</li>
+                                <li>Улучшение адгезии и стойкости</li>
+                                <li>Удаление остаточной влаги</li>
+                            </ul>
+                        </div>
+                        <div class="step-equipment">
+                            <div class="equipment-card">
+                                <div class="equipment-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h4>Печь для отжига</h4>
+                                <p>Термоупрочнение</p>
+                                <div class="equipment-specs">
+                                    <span><i class="fas fa-temperature-high"></i> До 400°C</span>
+                                    <span><i class="fas fa-wind"></i> Азотная атмосфера</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фоторезисты -->
+    <section class="photoresists-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Типы фоторезистов</h2>
+                <p class="section-subtitle">Широкий выбор материалов для различных применений</p>
+            </div>
+
+            <div class="photoresists-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="positive">Позитивные фоторезисты</button>
+                    <button class="tab-btn" data-tab="negative">Негативные фоторезисты</button>
+                    <button class="tab-btn" data-tab="e-beam">Электронно-лучевые резисты</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="positive">
+                        <div class="photoresist-info">
+                            <div class="photoresist-description">
+                                <h3>Позитивные фоторезисты</h3>
+                                <p>Экспонированные области становятся растворимыми в проявителе. Обеспечивают высокое разрешение и хорошую адгезию.</p>
+                                <ul class="photoresist-properties">
+                                    <li><strong>Тип:</strong> DNQ-норолак</li>
+                                    <li><strong>Толщина:</strong> 0.5-2.0 мкм</li>
+                                    <li><strong>Чувствительность:</strong> 100-300 мДж/см²</li>
+                                    <li><strong>Разрешение:</strong> 0.35-1.0 мкм</li>
+                                    <li><strong>Стойкость:</strong> Высокая к кислотам</li>
+                                </ul>
+                            </div>
+                            <div class="photoresist-applications">
+                                <h4>Применения:</h4>
+                                <ul>
+                                    <li>Кремниевая технология</li>
+                                    <li>Создание контактных окон</li>
+                                    <li>Металлизация</li>
+                                    <li>Изоляционные слои</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="negative">
+                        <div class="photoresist-info">
+                            <div class="photoresist-description">
+                                <h3>Негативные фоторезисты</h3>
+                                <p>Экспонированные области становятся нерастворимыми. Образуют более прочные и устойчивые структуры.</p>
+                                <ul class="photoresist-properties">
+                                    <li><strong>Тип:</strong> SU-8, резисты на основе каучука</li>
+                                    <li><strong>Толщина:</strong> 1-100 мкм</li>
+                                    <li><strong>Чувствительность:</strong> 50-200 мДж/см²</li>
+                                    <li><strong>Разрешение:</strong> 0.5-2.0 мкм</li>
+                                    <li><strong>Стойкость:</strong> Очень высокая</li>
+                                </ul>
+                            </div>
+                            <div class="photoresist-applications">
+                                <h4>Применения:</h4>
+                                <ul>
+                                    <li>Глубокая литография</li>
+                                    <li>МЭМС-технологии</li>
+                                    <li>Толстые структуры</li>
+                                    <li>Изготовление матриц</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="e-beam">
+                        <div class="photoresist-info">
+                            <div class="photoresist-description">
+                                <h3>Электронно-лучевые резисты</h3>
+                                <p>Специальные резисты, чувствительные к электронному пучку. Обеспечивают нанометровое разрешение.</p>
+                                <ul class="photoresist-properties">
+                                    <li><strong>Тип:</strong> PMMA, ZEP, HSQ</li>
+                                    <li><strong>Толщина:</strong> 50-500 нм</li>
+                                    <li><strong>Чувствительность:</strong> 100-500 мкКл/см²</li>
+                                    <li><strong>Разрешение:</strong> 10-100 нм</li>
+                                    <li><strong>Стойкость:</strong> Зависит от типа</li>
+                                </ul>
+                            </div>
+                            <div class="photoresist-applications">
+                                <h4>Применения:</h4>
+                                <ul>
+                                    <li>Нанотехнологии</li>
+                                    <li>Квантовые устройства</li>
+                                    <li>Фотонные кристаллы</li>
+                                    <li>Исследовательские проекты</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контроль качества -->
+    <section class="quality-control">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Контроль качества</h2>
+                <p class="section-subtitle">Многоуровневая система контроля на каждом этапе процесса</p>
+            </div>
+
+            <div class="quality-control__grid">
+                <div class="qc-card">
+                    <div class="qc-card__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Оптическая микроскопия</h3>
+                    <p>Контроль дефектов, выравнивания и общего качества структуры при увеличении до 1000×</p>
+                    <div class="qc-equipment">
+                        <strong>Оборудование:</strong> Olympus BX51, Nikon Eclipse
+                    </div>
+                </div>
+
+                <div class="qc-card">
+                    <div class="qc-card__icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Профилометрия</h3>
+                    <p>Измерение толщины фоторезиста и рельефа структуры с точностью ±1 нм</p>
+                    <div class="qc-equipment">
+                        <strong>Оборудование:</strong> KLA Tencor P-16+
+                    </div>
+                </div>
+
+                <div class="qc-card">
+                    <div class="qc-card__icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>CD-SEM</h3>
+                    <p>Измерение критических размеров с точностью до 0.1 нм с помощью сканирующей электронной микроскопии</p>
+                    <div class="qc-equipment">
+                        <strong>Оборудование:</strong> Hitachi CG4000
+                    </div>
+                </div>
+
+                <div class="qc-card">
+                    <div class="qc-card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Эллипсометрия</h3>
+                    <p>Измерение толщины тонких пленок и оптических параметров с точностью ±0.1 нм</p>
+                    <div class="qc-equipment">
+                        <strong>Оборудование:</strong> J.A. Woollam M-2000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заказа -->
+    <section class="order-section" id="order-form">
+        <div class="container">
+            <div class="order-container">
+                <div class="order-form">
+                    <h2 class="order-form__title">Заказать услугу фотолитографии</h2>
+                    <p class="order-form__subtitle">Заполните форму, и наш специалист свяжется с вами для обсуждения деталей</p>
+
+                    <form class="order-form__content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Компания</label>
+                                <input type="text" id="company">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lithography-type">Тип литографии</label>
+                            <select id="lithography-type">
+                                    <option value="">Выберите тип</option>
+                                    <option value="projection">Проекционная (0.35-1.0 мкм)</option>
+                                    <option value="contact">Контактная (0.5-2.0 мкм)</option>
+                                    <option value="e-beam">Электронно-лучевая (10-100 нм)</option>
+                                </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="wafer-size">Диаметр пластины, мм</label>
+                                <select id="wafer-size">
+                                        <option value="100">100 мм</option>
+                                        <option value="150">150 мм</option>
+                                        <option value="200" selected>200 мм</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="wafer-count">Количество пластин, шт</label>
+                                <input type="number" id="wafer-count" min="1" value="1">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resolution">Требуемое разрешение, мкм</label>
+                            <input type="text" id="resolution" placeholder="например: 0.5">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mask-info">Информация о фотошаблоне</label>
+                            <textarea id="mask-info" rows="4" placeholder="Есть ли у вас фотошаблон? Формат (GDSII, CIF), сложность рисунка..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requirements">Особые требования</label>
+                            <textarea id="special-requirements" rows="4" placeholder="Толщина резиста, тип резиста, многоуровневая литография..."></textarea>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn--primary btn--large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Отправить заявку
+                                </button>
+                            <div class="form-agreement">
+                                Нажимая кнопку, вы соглашаетесь с
+                                <a href="privacy.html">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="order-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Сроки выполнения</h3>
+                        <ul>
+                            <li>Разработка фотошаблона: 3-7 дней</li>
+                            <li>Одиночная пластина: 1-2 дня</li>
+                            <li>Партия до 10 пластин: 3-5 дней</li>
+                            <li>Крупная партия: 1-2 недели</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-file-contract"></i> Что вы получите</h3>
+                        <ul>
+                            <li>Обработанные пластины с фоторезистом</li>
+                            <li>Протокол измерений параметров</li>
+                            <li>Отчет по контролю качества</li>
+                            <li>Рекомендации по дальнейшей обработке</li>
+                            <li>Файлы для повторного заказа</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone-alt"></i> Контакты отдела</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-user"></i> Сергей Иванов, руководитель отдела литографии</p>
+                            <p><i class="fas fa-phone"></i> +7 (812) 309-27-37 (доб. 205)</p>
+                            <p><i class="fas fa-envelope"></i> litho@rb-bw.ru</p>
+                            <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на популярные вопросы о фотолитографии</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                            <span>Можно ли использовать ваши фотошаблоны или нужно предоставлять свои?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    <div class="faq-answer">
+                        <p>Мы можем работать как с вашими фотошаблонами, так и изготовить новые по вашим чертежам (форматы GDSII, CIF, DXF). Также у нас есть библиотека стандартных шаблонов для типовых задач.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                            <span>Какое минимальное разрешение вы можете обеспечить?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    <div class="faq-answer">
+                        <p>Для проекционной литографии - 0.35 мкм, для контактной - 0.5 мкм, для электронно-лучевой - до 10 нм. Конкретное разрешение зависит от типа фоторезиста, толщины и сложности рисунка.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                            <span>Можно ли выполнить многоуровневую литографию с точным выравниванием?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    <div class="faq-answer">
+                        <p>Да, наш степпер обеспечивает автоматическое выравнивание с точностью ±0.1 мкм. Мы успешно выполняем многоуровневые процессы с 5+ масками.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                            <span>Предоставляете ли вы услугу разработки технологического процесса?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    <div class="faq-answer">
+                        <p>Да, наши технологи могут разработать оптимальный процесс литографии под ваши конкретные требования, включая подбор фоторезиста, режимов экспонирования и проявления.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="site-footer">
+    <div class="site-footer__main">
+        <div class="container">
+            <div class="site-footer__grid">
+                <!-- Контакты -->
+                <div class="site-footer__col">
+                    <h3 class="site-footer__title">Контакты</h3>
+                    <div class="site-footer__contacts">
+                        <div class="footer-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <a href="tel:+78123092737">+7 (812) 309-27-37</a>
+                                <a href="tel:+78005556889">+7 (800) 555-68-89</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a>
+                                <a href="mailto:litho@rb-bw.ru">litho@rb-bw.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Пн-Пт: 9:00-18:00</p>
+                                <p>Сб-Вс: выходной</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Услуги -->
+                <div class="site-footer__col">
+                    <h3 class="site-footer__title">Технологические услуги</h3>
+                    <ul class="site-footer__menu">
+                        <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                        <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                        <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                        <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                        <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                    </ul>
+                </div>
+
+                <!-- Оборудование -->
+                <div class="site-footer__col">
+                    <h3 class="site-footer__title">Оборудование</h3>
+                    <ul class="site-footer__menu">
+                        <li><a href="mounting-line.html"><i class="fas fa-chevron-right"></i> Линии монтажа</a></li>
+                        <li><a href="soldering-stations.html"><i class="fas fa-chevron-right"></i> Паяльные станции</a></li>
+                        <li><a href="consumables.html"><i class="fas fa-chevron-right"></i> Расходные материалы</a></li>
+                        <li><a href="service-equipment.html"><i class="fas fa-chevron-right"></i> Сервисное оборудование</a></li>
+                        <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль и диагностика</a></li>
+                    </ul>
+                </div>
+
+                <!-- Подписка -->
+                <div class="site-footer__col">
+                    <h3 class="site-footer__title">Подписаться на новости</h3>
+                    <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                    <form class="site-footer__subscribe">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                    </form>
+                    <div class="site-footer__social">
+                        <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer__bottom">
+        <div class="container">
+            <div class="site-footer__bottom-content">
+                <div class="site-footer__copyright">
+                    © 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.
+                </div>
+                <div class="site-footer__links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Пользовательское соглашение</a>
+                    <a href="sitemap.html">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Кнопка "Наверх" -->
+<button class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+<!-- Модальное окно обратного звонка -->
+<div class="modal" id="callback-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+        <div class="callback-form">
+            <h3>Заказать обратный звонок</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Комментарий (необязательно)" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--block">
+                        <i class="fas fa-phone-volume"></i>
+                        Заказать звонок
+                    </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/service-page.js"></script>
+<script src="js/photolithography.js"></script>
+</body>
+
+</html>

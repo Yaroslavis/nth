@@ -1,0 +1,336 @@
+/* Продолжение quality-control.css */
+
+.visual-legend {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.visual-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: #4b5563;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.defect-color {
+    background: #ef4444;
+}
+
+.feature-color {
+    background: #10b981;
+}
+
+.scan-color {
+    background: #3b82f6;
+}
+
+
+/* Методы контроля */
+
+.methods-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.method-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+}
+
+.method-header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.method-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.method-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.method-content {
+    padding: 25px;
+}
+
+.method-content p {
+    color: #4b5563;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.method-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.method-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+    color: #6b7280;
+    position: relative;
+    padding-left: 25px;
+    font-size: 0.9rem;
+}
+
+.method-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.method-content li:last-child {
+    border-bottom: none;
+}
+
+
+/* Оборудование таблица */
+
+.equipment-section {
+    padding: 60px 0;
+    background: #f8fafc;
+}
+
+.equipment-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f1f5f9;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row div {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Сертификаты */
+
+.certificates-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.certificate {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.certificate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cert-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.certificate h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.certificate p {
+    color: #64748b;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+/* Форма заказа - checkbox стили */
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: #454957;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    color: white
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #3b82f6;
+}
+
+
+/* Адаптивность */
+
+@media (max-width: 768px) {
+    .control-process-visual {
+        height: 350px;
+    }
+    .sample {
+        top: 30px;
+        left: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .monitor {
+        top: 150px;
+        right: 30px;
+        width: 130px;
+        height: 100px;
+    }
+    .visual-legend {
+        bottom: 10px;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px 15px;
+    }
+    .methods-grid {
+        grid-template-columns: 1fr;
+    }
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .control-process-visual {
+        height: 400px;
+        padding: 20px;
+    }
+    .sample {
+        top: 20px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    .monitor {
+        top: 120px;
+        right: 20px;
+        width: 110px;
+        height: 80px;
+    }
+    .defect-1 {
+        width: 6px;
+        height: 6px;
+        top: 20px;
+        left: 30px;
+    }
+    .defect-2 {
+        width: 4px;
+        height: 4px;
+        bottom: 15px;
+        right: 20px;
+    }
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}

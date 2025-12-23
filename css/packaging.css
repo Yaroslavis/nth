@@ -1,0 +1,345 @@
+/* packaging.css - стили для страницы корпусирования */
+
+
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
+
+
+/* Герой секция для корпусирования */
+
+.packaging-hero .service-hero__title {
+    background: linear-gradient(90deg, #FFA500, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ===== ВИЗУАЛИЗАЦИЯ КОРПУСИРОВАНИЯ ===== */
+
+.packaging-process-visual {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.08);
+    border: 1px solid #d1fae5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chip-visual {
+    width: 200px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.chip-die {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.chip-wires {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 80px;
+    height: 40px;
+    z-index: 1;
+}
+
+.wire {
+    position: absolute;
+    background: #FBBF24;
+    height: 2px;
+    border-radius: 1px;
+    animation: wire-glow 2s infinite alternate;
+}
+
+.wire:nth-child(1) {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    transform: rotate(30deg);
+    animation-delay: 0s;
+}
+
+.wire:nth-child(2) {
+    top: 30px;
+    left: 10px;
+    width: 35px;
+    transform: rotate(15deg);
+    animation-delay: 0.2s;
+}
+
+.wire:nth-child(3) {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    transform: rotate(-30deg);
+    animation-delay: 0.4s;
+}
+
+.wire:nth-child(4) {
+    top: 30px;
+    right: 10px;
+    width: 35px;
+    transform: rotate(-15deg);
+    animation-delay: 0.6s;
+}
+
+@keyframes wire-glow {
+    0% {
+        box-shadow: 0 0 3px #FBBF24;
+    }
+    100% {
+        box-shadow: 0 0 8px #FBBF24;
+    }
+}
+
+.chip-package {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #6B7280, #9CA3AF);
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chip-pins {
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pin {
+    width: 8px;
+    height: 15px;
+    background: linear-gradient(to bottom, #4B5563, #6B7280);
+    border-radius: 2px 2px 0 0;
+}
+
+.visual-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.visual-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #f9fafb;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4B5563;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.die-color {
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+}
+
+.wire-color {
+    background: #FBBF24;
+}
+
+.package-color {
+    background: linear-gradient(135deg, #6B7280, #9CA3AF);
+}
+
+.pin-color {
+    background: linear-gradient(to bottom, #4B5563, #6B7280);
+}
+
+
+/* ===== ТИПЫ КОРПУСОВ ===== */
+
+.packaging-types {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.packaging-types__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.type-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(16, 185, 129, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+}
+
+.type-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #10B981, #34D399);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.type-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #065F46;
+}
+
+.type-card p {
+    color: #6B7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.type-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #4B5563;
+}
+
+.type-specs span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* ===== ОБОРУДОВАНИЕ ===== */
+
+.equipment-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.equipment-item {
+    background: #f9fafb;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.equipment-item:hover {
+    transform: translateY(-3px);
+    border-color: #10B981;
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.1);
+}
+
+.equipment-img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    background: linear-gradient(135deg, #10B981, #34D399);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.equipment-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #065F46;
+}
+
+.equipment-item p {
+    color: #6B7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 768px) {
+    .packaging-process-visual {
+        padding: 20px;
+    }
+    .chip-visual {
+        width: 160px;
+        height: 100px;
+    }
+    .chip-die {
+        width: 60px;
+        height: 30px;
+        top: 35px;
+        left: 50px;
+    }
+    .packaging-types__grid {
+        grid-template-columns: 1fr;
+    }
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .chip-visual {
+        width: 140px;
+        height: 85px;
+    }
+    .chip-die {
+        width: 50px;
+        height: 25px;
+        top: 30px;
+        left: 45px;
+    }
+    .visual-legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+    .type-card {
+        padding: 20px;
+    }
+}

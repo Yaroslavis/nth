@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-BW.RU - Новости микроэлектроники</title>
+    <meta name="description" content="Новости и события в области микроэлектроники, технологий производства и оборудования.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/news.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="site-header__submenu">
+                        <li>
+                            <a href="film-deposition.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Нанесение пленок</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photolithography.html">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>Фотолитография</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="etching.html">
+                                <i class="fas fa-water"></i>
+                                <span>Травление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="metallization.html">
+                                <i class="fas fa-atom"></i>
+                                <span>Металлизация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chemical-treatment.html">
+                                <i class="fas fa-flask"></i>
+                                <span>Хим обработка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quality-control.html">
+                                <i class="fas fa-search"></i>
+                                <span>Контроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="packaging.html">
+                                <i class="fas fa-box"></i>
+                                <span>Корпусирование</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link active">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            <i class="fas fa-home"></i>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item" aria-current="page">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="news-page">
+        <!-- Герой-секция новостей -->
+        <section class="news-hero">
+            <div class="container">
+                <div class="news-hero__content">
+                    <div class="news-hero__text">
+                        <div class="news-hero__badges">
+                            <span class="hero-badge hero-badge--trending">
+                            <i class="fas fa-fire"></i> Тренды 2024
+                        </span>
+                            <span class="hero-badge hero-badge--exclusive">
+                            <i class="fas fa-star"></i> Эксклюзив
+                        </span>
+                        </div>
+                        <h1 class="news-hero__title">
+                            <span class="title-gradient">Новости</span> микроэлектроники
+                        </h1>
+                        <p class="news-hero__subtitle">Свежие обзоры, события и достижения в области технологий производства интегральных схем и полупроводниковых устройств</p>
+
+                        <div class="news-hero__search">
+
+                            <div class="search-tags">
+                                <span class="search-tag">#литография</span>
+                                <span class="search-tag">#полупроводники</span>
+                                <span class="search-tag">#нанотехнологии</span>
+                                <span class="search-tag">#EUV</span>
+                                <span class="search-tag">#кремний</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-hero__visual">
+                        <div class="hero-card hero-card--main">
+                            <div class="hero-card__image">
+                                <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Современное оборудование микроэлектроники">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="hero-card__content">
+                                <div class="hero-card__badge">
+                                    <i class="fas fa-crown"></i> Главная новость
+                                </div>
+                                <h3 class="hero-card__title">EUV-литография: революция в производстве чипов 3 нм</h3>
+                                <div class="hero-card__meta">
+                                    <span><i class="far fa-calendar"></i> 15 марта 2024</span>
+                                    <span><i class="far fa-eye"></i> 2.5K просмотров</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">156+</div>
+                                    <div class="hero-stat__label">Новостей</div>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">24</div>
+                                    <div class="hero-stat__label">Категории</div>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-calendar-star"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">2024</div>
+                                    <div class="hero-stat__label">Актуальный год</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        </section>
+
+        <!-- Основной контент -->
+        <div class="news-container">
+            <div class="container">
+                <div class="news-layout">
+                    <!-- Основная колонка с новостями -->
+                    <div class="news-main">
+                        <!-- Фильтры новостей -->
+                        <div class="news-filters">
+                            <div class="filter-group">
+                                <h3>Категории</h3>
+                                <div class="category-filters">
+                                    <button class="category-filter active" data-category="all">Все новости</button>
+                                    <button class="category-filter" data-category="technology">Технологии</button>
+                                    <button class="category-filter" data-category="equipment">Оборудование</button>
+                                    <button class="category-filter" data-category="research">Исследования</button>
+                                    <button class="category-filter" data-category="industry">Индустрия</button>
+                                    <button class="category-filter" data-category="events">События</button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h3>Сортировка</h3>
+                                <select class="sort-select" id="news-sort">
+                                    <option value="newest">Сначала новые</option>
+                                    <option value="oldest">Сначала старые</option>
+                                    <option value="popular">Сначала популярные</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Список новостей -->
+                        <div class="news-list" id="news-list">
+                            <!-- Новость 1 (Главная) -->
+                            <article class="news-item news-item--featured" data-category="technology" data-date="2024-03-15" data-views="245">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Новые технологии литографии">
+                                    <span class="news-label">Новое</span>
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category technology">Технологии</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 15 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 245</span>
+                                    </div>
+                                    <h2 class="news-title">EUV-литография: переход на 3 нм техпроцесс</h2>
+                                    <p class="news-excerpt">Крупнейшие производители полупроводников объявили о начале массового производства чипов по 3 нм техпроцессу с использованием экстремального ультрафиолетового излучения.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">литография</span>
+                                        <span class="news-tag">EUV</span>
+                                        <span class="news-tag">3 нм</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!-- Новость 2 -->
+                            <article class="news-item" data-category="equipment" data-date="2024-03-12" data-views="189">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Новое оборудование ASML">
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category equipment">Оборудование</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 12 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 189</span>
+                                    </div>
+                                    <h2 class="news-title">ASML представляет новое поколение степперов</h2>
+                                    <p class="news-excerpt">Компания ASML анонсировала новый фотолитографический степпер с улучшенной точностью позиционирования и увеличенной производительностью.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">ASML</span>
+                                        <span class="news-tag">степпер</span>
+                                        <span class="news-tag">оборудование</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!-- Новость 3 -->
+                            <article class="news-item" data-category="research" data-date="2024-03-10" data-views="312">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Квантовые вычисления">
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category research">Исследования</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 10 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 312</span>
+                                    </div>
+                                    <h2 class="news-title">Прорыв в производстве квантовых процессоров</h2>
+                                    <p class="news-excerpt">Исследовательская группа MIT разработала новый метод создания кубитов с рекордной стабильностью и временем когерентности.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">квантовые вычисления</span>
+                                        <span class="news-tag">кубиты</span>
+                                        <span class="news-tag">исследования</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!-- Новость 4 -->
+                            <article class="news-item" data-category="industry" data-date="2024-03-08" data-views="178">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Новый завод">
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category industry">Индустрия</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 8 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 178</span>
+                                    </div>
+                                    <h2 class="news-title">Открытие нового завода по производству SiC-подложек</h2>
+                                    <p class="news-excerpt">В России запущен первый завод по производству карбид-кремниевых подложек для силовой электроники мощностью 50 тыс. пластин в год.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">SiC</span>
+                                        <span class="news-tag">подложки</span>
+                                        <span class="news-tag">производство</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!-- Новость 5 -->
+                            <article class="news-item" data-category="events" data-date="2024-03-05" data-views="223">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Конференция">
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category events">События</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 5 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 223</span>
+                                    </div>
+                                    <h2 class="news-title">Международная конференция по микроэлектронике SEMICON Europe 2024</h2>
+                                    <p class="news-excerpt">Анонсированы даты и программа крупнейшей европейской конференции по полупроводниковым технологиям, которая пройдет в Мюнхене.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">конференция</span>
+                                        <span class="news-tag">SEMICON</span>
+                                        <span class="news-tag">мероприятия</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+
+                            <!-- Новость 6 -->
+                            <article class="news-item" data-category="technology" data-date="2024-03-03" data-views="156">
+                                <div class="news-item__image">
+                                    <img src="https://images.unsplash.com/photo-1581092580497-e0d4cb184827?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AI в микроэлектронике">
+                                </div>
+                                <div class="news-item__content">
+                                    <div class="news-meta">
+                                        <span class="news-category technology">Технологии</span>
+                                        <span class="news-date"><i class="far fa-calendar"></i> 3 марта 2024</span>
+                                        <span class="news-views"><i class="far fa-eye"></i> 156</span>
+                                    </div>
+                                    <h2 class="news-title">ИИ для оптимизации техпроцессов производства микросхем</h2>
+                                    <p class="news-excerpt">Нейросетевые алгоритмы позволили сократить время разработки новых техпроцессов на 40% и улучшить выход годных пластин на 15%.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag">искусственный интеллект</span>
+                                        <span class="news-tag">оптимизация</span>
+                                        <span class="news-tag">техпроцесс</span>
+                                    </div>
+                                    <a href="news-single.html" class="news-read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Пагинация -->
+                        <div class="news-pagination">
+                            <button class="pagination-btn pagination-prev" disabled>
+                                <i class="fas fa-chevron-left"></i> Назад
+                            </button>
+                            <div class="pagination-numbers">
+                                <button class="pagination-number active">1</button>
+                                <button class="pagination-number">2</button>
+                                <button class="pagination-number">3</button>
+                                <span class="pagination-dots">...</span>
+                                <button class="pagination-number">8</button>
+                            </div>
+                            <button class="pagination-btn pagination-next">
+                                Вперед <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Боковая панель -->
+                    <aside class="news-sidebar">
+                        <!-- Популярные новости -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Популярные новости</h3>
+                            <div class="popular-news">
+                                <article class="popular-news-item">
+                                    <div class="popular-news__image">
+                                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="EUV литография">
+                                    </div>
+                                    <div class="popular-news__content">
+                                        <h4>EUV-литография: переход на 3 нм</h4>
+                                        <div class="popular-news__meta">
+                                            <span>15.03.2024</span>
+                                            <span>245 просмотров</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-news-item">
+                                    <div class="popular-news__image">
+                                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Квантовые процессоры">
+                                    </div>
+                                    <div class="popular-news__content">
+                                        <h4>Прорыв в квантовых процессорах</h4>
+                                        <div class="popular-news__meta">
+                                            <span>10.03.2024</span>
+                                            <span>312 просмотров</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-news-item">
+                                    <div class="popular-news__image">
+                                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="ASML степпер">
+                                    </div>
+                                    <div class="popular-news__content">
+                                        <h4>Новые степперы ASML</h4>
+                                        <div class="popular-news__meta">
+                                            <span>12.03.2024</span>
+                                            <span>189 просмотров</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="popular-news-item">
+                                    <div class="popular-news__image">
+                                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Конференция">
+                                    </div>
+                                    <div class="popular-news__content">
+                                        <h4>Конференция SEMICON Europe 2024</h4>
+                                        <div class="popular-news__meta">
+                                            <span>05.03.2024</span>
+                                            <span>223 просмотра</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Категории -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Категории</h3>
+                            <ul class="category-list">
+                                <li>
+                                    <a href="#" data-category="technology">
+                                        <span class="category-name">Технологии</span>
+                                        <span class="category-count">42</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-category="equipment">
+                                        <span class="category-name">Оборудование</span>
+                                        <span class="category-count">38</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-category="research">
+                                        <span class="category-name">Исследования</span>
+                                        <span class="category-count">29</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-category="industry">
+                                        <span class="category-name">Индустрия</span>
+                                        <span class="category-count">24</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-category="events">
+                                        <span class="category-name">События</span>
+                                        <span class="category-count">18</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-category="education">
+                                        <span class="category-name">Образование</span>
+                                        <span class="category-count">5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Архив -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Архив новостей</h3>
+                            <select class="archive-select" id="news-archive">
+                                <option value="">Выберите месяц</option>
+                                <option value="2024-03">Март 2024</option>
+                                <option value="2024-02">Февраль 2024</option>
+                                <option value="2024-01">Январь 2024</option>
+                                <option value="2023-12">Декабрь 2023</option>
+                                <option value="2023-11">Ноябрь 2023</option>
+                                <option value="2023-10">Октябрь 2023</option>
+                            </select>
+                        </div>
+
+                        <!-- Подписка -->
+                        <div class="sidebar-widget">
+                            <div class="subscribe-widget">
+                                <h3 class="widget-title">Подписка на новости</h3>
+                                <p>Будьте в курсе последних новостей микроэлектроники</p>
+                                <form class="subscribe-form">
+                                    <input type="email" placeholder="Ваш email" required>
+                                    <button type="submit">Подписаться</button>
+                                </form>
+                                <p class="subscribe-note">Подписываясь, вы соглашаетесь с политикой конфиденциальности</p>
+                            </div>
+                        </div>
+
+                        <!-- Теги -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Популярные теги</h3>
+                            <div class="tag-cloud">
+                                <a href="#" class="tag">литография</a>
+                                <a href="#" class="tag">полупроводники</a>
+                                <a href="#" class="tag">EUV</a>
+                                <a href="#" class="tag">ASML</a>
+                                <a href="#" class="tag">квантовые вычисления</a>
+                                <a href="#" class="tag">SiC</a>
+                                <a href="#" class="tag">техпроцесс</a>
+                                <a href="#" class="tag">чистые комнаты</a>
+                                <a href="#" class="tag">метрология</a>
+                                <a href="#" class="tag">МЭМС</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рассылка новостей -->
+        <section class="news-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Еженедельная рассылка новостей</h2>
+                        <p>Получайте самые важные новости микроэлектроники раз в неделю. Только полезная информация без спама.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form class="newsletter-signup">
+                            <input type="email" placeholder="Ваш рабочий email" required>
+                            <button type="submit" class="btn btn--primary">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <!-- Контакты -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <a href="tel:+78123092737">+7 (812) 309-27-37</a>
+                                    <a href="tel:+78005556889">+7 (800) 555-68-89</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a>
+                                    <a href="mailto:news@rb-bw.ru">news@rb-bw.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Услуги -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Оборудование -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Оборудование</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="mounting-line.html"><i class="fas fa-chevron-right"></i> Линии монтажа</a></li>
+                            <li><a href="soldering-stations.html"><i class="fas fa-chevron-right"></i> Паяльные станции</a></li>
+                            <li><a href="consumables.html"><i class="fas fa-chevron-right"></i> Расходные материалы</a></li>
+                            <li><a href="service-equipment.html"><i class="fas fa-chevron-right"></i> Сервисное оборудование</a></li>
+                            <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль и диагностика</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Подписка -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                        <form class="site-footer__subscribe">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">
+                        © 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.
+                    </div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Модальное окно детального просмотра новости -->
+    <div class="modal" id="news-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--large">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="news-modal-content" id="news-modal-content">
+                <!-- Контент будет загружен динамически -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>

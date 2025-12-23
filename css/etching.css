@@ -1,0 +1,1012 @@
+/* etching.css - стили для страницы травления */
+
+
+/* ===== ОСНОВНЫЕ СТИЛИ ===== */
+
+
+/* Герой секция для травления */
+
+.etching-hero .service-hero__title {
+    background: linear-gradient(90deg, #FFA500, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ===== КОМПАКТНАЯ ВИЗУАЛИЗАЦИЯ ПРОЦЕССА ТРАВЛЕНИЯ ===== */
+
+.etching-process-compact {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(33, 150, 243, 0.08);
+    border: 1px solid #eef2f7;
+}
+
+.process-flow {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.process-step-compact {
+    flex: 1;
+    min-width: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.step-header-compact {
+    margin-bottom: 20px;
+}
+
+.step-number-compact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.step-title-compact {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.step-desc {
+    font-size: 0.85rem;
+    color: #718096;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.step-visual-compact {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 15px 10px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.material-stack {
+    width: 120px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.material-layer {
+    width: 100%;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.material-layer.substrate {
+    height: 25px;
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.material-layer.etching-material {
+    height: 20px;
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+    margin-bottom: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.material-layer.photo-resist {
+    height: 15px;
+    background: linear-gradient(135deg, #FFA500, #FFB347);
+    margin-bottom: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Анимация травления */
+
+.etching-active {
+    position: relative;
+    overflow: hidden;
+}
+
+.plasma-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(148, 0, 211, 0.15) 0%, rgba(148, 0, 211, 0.3) 30%, transparent 70%);
+    animation: plasma-glow 2s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes plasma-glow {
+    0% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+.material-layer.etching {
+    animation: etching-progress 3s ease-in-out infinite;
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+}
+
+@keyframes etching-progress {
+    0% {
+        height: 20px;
+        opacity: 1;
+    }
+    50% {
+        height: 8px;
+        opacity: 0.7;
+    }
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+
+/* Результат травления */
+
+.etched-pattern-compact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.pattern-line {
+    width: 20px;
+    background: linear-gradient(to top, #4682B4, #5D9CE6);
+    border-radius: 2px 2px 0 0;
+    animation: pattern-grow 1.5s ease-in-out infinite alternate;
+}
+
+.pattern-line:nth-child(1) {
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.pattern-line:nth-child(2) {
+    height: 25px;
+    animation-delay: 0.2s;
+}
+
+.pattern-line:nth-child(3) {
+    height: 18px;
+    animation-delay: 0.4s;
+}
+
+@keyframes pattern-grow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+
+/* Стрелки процесса */
+
+.process-arrow-compact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    color: #667eea;
+    opacity: 0.6;
+}
+
+
+/* Легенда */
+
+.legend-compact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.legend-item-compact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #f8fafc;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #4a5568;
+    transition: all 0.2s ease;
+}
+
+.legend-item-compact:hover {
+    background: #edf2f7;
+    transform: translateY(-1px);
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.substrate-dot {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+}
+
+.material-dot {
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+}
+
+.resist-dot {
+    background: linear-gradient(135deg, #FFA500, #FFB347);
+}
+
+.plasma-dot {
+    background: linear-gradient(135deg, #9400D3, #BA55D3);
+    position: relative;
+    overflow: hidden;
+}
+
+.plasma-dot::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: dot-shimmer 2s infinite;
+}
+
+@keyframes dot-shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* ===== БОЛЕЕ ПОДРОБНАЯ ВИЗУАЛИЗАЦИЯ (АЛЬТЕРНАТИВА) ===== */
+
+.etching-process {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(33, 150, 243, 0.1);
+    border: 1px solid #e3eaf2;
+    margin-bottom: 40px;
+}
+
+.etching-process .process-step-visual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.etching-process .step-visual {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etching-process .step-visual:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.etching-process .step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 15px auto 10px;
+}
+
+.etching-process .step-title {
+    text-align: center;
+    padding: 0 15px 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.etching-process .step-visual-content {
+    height: 160px;
+    position: relative;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 15px 15px;
+    background: #f9f9f9;
+}
+
+.etching-process .substrate {
+    height: 35px;
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.etching-process .layer {
+    height: 30px;
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.etching-process .layer.etched {
+    background: linear-gradient(135deg, #87CEEB, #B0E0E6);
+    height: 20px;
+}
+
+.etching-process .layer.etched-result {
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+    height: 25px;
+    width: 70%;
+    margin: 0 auto 5px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.etching-process .layer.etched-result::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: pattern-glow-detailed 2s infinite alternate;
+}
+
+.etching-process .mask-layer {
+    height: 25px;
+    background: linear-gradient(135deg, #FFA500, #FFB347);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.etching-process .plasma {
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(148, 0, 211, 0.3), rgba(148, 0, 211, 0.7), transparent);
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    animation: plasma-pulse 2s infinite;
+    overflow: hidden;
+}
+
+.etching-process .plasma::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: plasma-scan 3s infinite linear;
+}
+
+@keyframes plasma-pulse {
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes plasma-scan {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes pattern-glow-detailed {
+    0% {
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    }
+    100% {
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    }
+}
+
+.etching-process .process-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #e3eaf2;
+}
+
+.etching-process .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.etching-process .legend-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.etching-process .legend-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.etching-process .legend-item:nth-child(1) .legend-color {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+}
+
+.etching-process .legend-item:nth-child(2) .legend-color {
+    background: linear-gradient(135deg, #4682B4, #5D9CE6);
+}
+
+.etching-process .legend-item:nth-child(3) .legend-color {
+    background: linear-gradient(135deg, #FFA500, #FFB347);
+}
+
+.etching-process .legend-item:nth-child(4) .legend-color {
+    background: linear-gradient(135deg, #9400D3, #BA55D3);
+    position: relative;
+    overflow: hidden;
+}
+
+.etching-process .legend-item:nth-child(4) .legend-color::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: plasma-shimmer 2s infinite;
+}
+
+@keyframes plasma-shimmer {
+    0%,
+    100% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* ===== ТИПЫ ТРАВЛЕНИЯ ===== */
+
+.etching-types {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.etching-types__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.etching-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-light);
+    transition: var(--transition);
+}
+
+.etching-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow-medium);
+}
+
+.etching-card__header {
+    padding: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.etching-card__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), transparent);
+}
+
+.etching-card__header--wet {
+    background: linear-gradient(135deg, #2196f3, #21cbf3);
+}
+
+.etching-card__header--rie {
+    background: linear-gradient(135deg, #9C27B0, #BA68C8);
+}
+
+.etching-card__header--icp {
+    background: linear-gradient(135deg, #FF5722, #FF9800);
+}
+
+.etching-card__header h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.etching-resolution {
+    position: relative;
+    z-index: 2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+.etching-card__content {
+    padding: 30px;
+}
+
+.etching-card__description {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.etching-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.etching-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.etching-features i {
+    color: var(--accent-green);
+    font-size: 12px;
+}
+
+.etching-materials,
+.etching-equipment {
+    margin-bottom: 20px;
+}
+
+.etching-materials h4,
+.etching-equipment h4 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.etching-materials p,
+.etching-equipment p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ===== МАТЕРИАЛЫ И ГАЗЫ ===== */
+
+.materials-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.materials-tabs {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow-light);
+}
+
+.materials-tabs .tabs-header {
+    display: flex;
+    background: var(--primary-color);
+    overflow-x: auto;
+}
+
+.materials-tabs .tab-btn {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.materials-tabs .tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.materials-tabs .tab-btn.active {
+    background: var(--accent-blue);
+    color: white;
+}
+
+.materials-tabs .tabs-content {
+    padding: 40px;
+}
+
+.materials-tabs .tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.materials-tabs .tab-pane.active {
+    display: block;
+}
+
+.material-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.material-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.material-description p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.material-properties {
+    list-style: none;
+    padding: 0;
+}
+
+.material-properties li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.material-properties li:last-child {
+    border-bottom: none;
+}
+
+.material-properties strong {
+    color: var(--primary-color);
+}
+
+.material-applications h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.material-applications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.material-applications li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.material-applications li:last-child {
+    border-bottom: none;
+}
+
+
+/* ===== КОНТРОЛЬ КАЧЕСТВА ДЛЯ ТРАВЛЕНИЯ ===== */
+
+.etching-section .qc-card__icon {
+    background: linear-gradient(135deg, var(--accent-blue), #21cbf3);
+}
+
+
+/* ===== СПЕЦИФИЧНЫЕ АНИМАЦИИ ДЛЯ ТРАВЛЕНИЯ ===== */
+
+@keyframes gas-flow {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.gas-flow-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gas-flow-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #FF5722, transparent);
+    animation: gas-flow 3s linear infinite;
+    transform: translateX(-50%);
+}
+
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    /* Достаточно большое значение для контента */
+    opacity: 1;
+}
+
+.faq-question {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #e9ecef;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question {
+    background: #e9ecef;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+@media (max-width: 992px) {
+    .etching-process .process-step-visual {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .etching-types__grid {
+        grid-template-columns: 1fr;
+    }
+    .material-info {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .materials-tabs .tabs-header {
+        flex-direction: column;
+    }
+    .materials-tabs .tab-btn {
+        min-width: 100%;
+    }
+    .etching-process {
+        padding: 25px;
+    }
+    .etching-process .step-visual-content {
+        height: 140px;
+    }
+    .etching-process .process-legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .etching-process .legend-item {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+    .process-flow {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .process-step-compact {
+        padding: 0;
+    }
+    .process-arrow-compact {
+        transform: rotate(90deg);
+        padding: 10px 0;
+    }
+    .step-visual-compact {
+        height: 100px;
+    }
+    .material-stack {
+        width: 100px;
+    }
+    .legend-compact {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .legend-item-compact {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .etching-card__header {
+        padding: 20px;
+    }
+    .etching-card__content {
+        padding: 20px;
+    }
+    .materials-tabs .tabs-content {
+        padding: 20px;
+    }
+    .etching-process .step-visual-content {
+        height: 130px;
+    }
+    .etching-process .layer {
+        font-size: 11px;
+    }
+    .etching-process .mask-layer,
+    .etching-process .substrate {
+        font-size: 11px;
+    }
+    .etching-process-compact {
+        padding: 20px;
+    }
+    .step-visual-compact {
+        height: 90px;
+        padding: 10px;
+    }
+    .material-stack {
+        width: 90px;
+    }
+    .material-layer.substrate {
+        height: 20px;
+    }
+    .material-layer.etching-material {
+        height: 16px;
+    }
+    .material-layer.photo-resist {
+        height: 12px;
+    }
+    .step-number-compact {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+    .step-title-compact {
+        font-size: 0.95rem;
+    }
+    .step-desc {
+        font-size: 0.8rem;
+    }
+}

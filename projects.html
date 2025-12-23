@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-BW.RU - Проекты и отзывы</title>
+    <meta name="description" content="Наши реализованные проекты в области микроэлектроники и отзывы клиентов. Доверие и качество.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="site-header__submenu">
+                        <li>
+                            <a href="film-deposition.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Нанесение пленок</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photolithography.html">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>Фотолитография</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="etching.html">
+                                <i class="fas fa-water"></i>
+                                <span>Травление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="metallization.html">
+                                <i class="fas fa-atom"></i>
+                                <span>Металлизация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chemical-treatment.html">
+                                <i class="fas fa-flask"></i>
+                                <span>Хим обработка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quality-control.html">
+                                <i class="fas fa-search"></i>
+                                <span>Контроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="packaging.html">
+                                <i class="fas fa-box"></i>
+                                <span>Корпусирование</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link active">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            <i class="fas fa-home"></i>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item" aria-current="page">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="projects-page">
+        <!-- Герой-секция -->
+        <section class="projects-hero">
+            <div class="container">
+                <div class="projects-hero__content">
+                    <div class="projects-hero__text">
+                        <div class="projects-hero__badges">
+                            <span class="hero-badge hero-badge--success">
+                                <i class="fas fa-trophy"></i> Успешные проекты
+                            </span>
+                            <span class="hero-badge hero-badge--trust">
+                                <i class="fas fa-handshake"></i> Доверие клиентов
+                            </span>
+                        </div>
+                        <h1 class="projects-hero__title">
+                            <span class="title-gradient">Реализованные</span> проекты
+                        </h1>
+                        <p class="projects-hero__subtitle">Мы гордимся каждым проектом и ценим отзывы наших клиентов. Узнайте о наших успехах в области микроэлектроники.</p>
+
+                        <div class="projects-hero__stats">
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">127+</div>
+                                    <div class="hero-stat__label">Завершенных проектов</div>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">89</div>
+                                    <div class="hero-stat__label">Постоянных клиентов</div>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat__icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="hero-stat__content">
+                                    <div class="hero-stat__number">98%</div>
+                                    <div class="hero-stat__label">Удовлетворенность</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-hero__visual">
+                        <div class="hero-card">
+                            <div class="hero-card__image">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Проект микроэлектроники">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="hero-card__content">
+                                <div class="hero-card__badge">
+                                    <i class="fas fa-crown"></i> Проект месяца
+                                </div>
+                                <h3 class="hero-card__title">Завод по производству SiC-подложек</h3>
+                                <p class="hero-card__description">Создание полного цикла производства карбид-кремниевых подложек для силовой электроники.</p>
+                                <div class="hero-card__meta">
+                                    <span><i class="far fa-calendar"></i> Завершен: Март 2024</span>
+                                    <span><i class="fas fa-industry"></i> Объем: 50 тыс. пластин/год</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Анимированные элементы фона -->
+            <div class="projects-hero__background">
+                <div class="bg-element bg-element--1"></div>
+                <div class="bg-element bg-element--2"></div>
+                <div class="bg-element bg-element--3"></div>
+            </div>
+        </section>
+
+        <!-- Фильтры проектов -->
+        <section class="projects-filters">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <h3>Категории проектов</h3>
+                        <div class="category-filters">
+                            <button class="category-filter active" data-category="all">Все проекты</button>
+                            <button class="category-filter" data-category="production">Производство</button>
+                            <button class="category-filter" data-category="research">Исследования</button>
+                            <button class="category-filter" data-category="automation">Автоматизация</button>
+                            <button class="category-filter" data-category="equipment">Оборудование</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Период</h3>
+                        <select class="period-select" id="projects-period">
+                            <option value="all">Все время</option>
+                            <option value="2024">2024 год</option>
+                            <option value="2023">2023 год</option>
+                            <option value="2022">2022 год</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты -->
+        <section class="projects-showcase">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши проекты</h2>
+                    <p class="section-subtitle">Реализованные решения в области микроэлектроники и смежных технологий</p>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="project-card" data-category="production" data-year="2024">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Линия фотолитографии">
+                            <div class="project-status project-status--completed">
+                                <i class="fas fa-check-circle"></i> Завершен
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category production">Производство</span>
+                            <h3 class="project-title">Линия фотолитографии 0.35 мкм</h3>
+                            <p class="project-description">Проектирование и запуск линии проекционной литографии для производства микросхем с разрешением 0.35 мкм.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Январь 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>АО "Микрон"</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">0.35 мкм</div>
+                                    <div class="stat-label">Разрешение</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">60 вф/ч</div>
+                                    <div class="stat-label">Производительность</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">200 мм</div>
+                                    <div class="stat-label">Диаметр пластин</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="1">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card" data-category="research" data-year="2023">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Исследовательский центр">
+                            <div class="project-status project-status--completed">
+                                <i class="fas fa-check-circle"></i> Завершен
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category research">Исследования</span>
+                            <h3 class="project-title">Центр нанотехнологий МГУ</h3>
+                            <p class="project-description">Оснащение исследовательского центра оборудованием для нанотехнологий и подготовки кадров.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Сентябрь 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-university"></i>
+                                    <span>МГУ им. Ломоносова</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">10 нм</div>
+                                    <div class="stat-label">Точность E-Beam</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">12</div>
+                                    <div class="stat-label">Лабораторий</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">ISO 5</div>
+                                    <div class="stat-label">Класс чистоты</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="2">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Проект 3 -->
+                    <article class="project-card" data-category="automation" data-year="2024">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Автоматизация производства">
+                            <div class="project-status project-status--in-progress">
+                                <i class="fas fa-sync-alt"></i> В процессе
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category automation">Автоматизация</span>
+                            <h3 class="project-title">Автоматизация контроля качества</h3>
+                            <p class="project-description">Внедрение системы автоматического контроля параметров пластин с использованием ИИ.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Март 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>НПП "Исток"</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">AI</div>
+                                    <div class="stat-label">Нейросети</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">100%</div>
+                                    <div class="stat-label">Автоматизация</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">±0.1 нм</div>
+                                    <div class="stat-label">Точность</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="3">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Проект 4 -->
+                    <article class="project-card" data-category="equipment" data-year="2023">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Оборудование PECVD">
+                            <div class="project-status project-status--completed">
+                                <i class="fas fa-check-circle"></i> Завершен
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category equipment">Оборудование</span>
+                            <h3 class="project-title">Установка PECVD для SiN</h3>
+                            <p class="project-description">Поставка и наладка плазмохимической установки для осаждения нитрида кремния.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Ноябрь 2023</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>ЗАО "Светлана"</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">150 мм</div>
+                                    <div class="stat-label">Диаметр</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">±1%</div>
+                                    <div class="stat-label">Равномерность</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">10 нм/мин</div>
+                                    <div class="stat-label">Скорость</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="4">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Проект 5 -->
+                    <article class="project-card" data-category="production" data-year="2022">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Чистая комната">
+                            <div class="project-status project-status--completed">
+                                <i class="fas fa-check-circle"></i> Завершен
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category production">Производство</span>
+                            <h3 class="project-title">Чистая комната ISO 6</h3>
+                            <p class="project-description">Строительство и оснащение чистой комнаты для производства МЭМС-устройств.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Июль 2022</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>ООО "МикроСенс"</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">ISO 6</div>
+                                    <div class="stat-label">Класс чистоты</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">300 м²</div>
+                                    <div class="stat-label">Площадь</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">±0.1°C</div>
+                                    <div class="stat-label">Температура</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="5">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Проект 6 -->
+                    <article class="project-card" data-category="research" data-year="2024">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d4cb184827?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Лаборатория метрологии">
+                            <div class="project-status project-status--in-progress">
+                                <i class="fas fa-sync-alt"></i> В процессе
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-category research">Исследования</span>
+                            <h3 class="project-title">Лаборатория метрологии</h3>
+                            <p class="project-description">Создание современной метрологической лаборатории с оборудованием для наноразмерных измерений.</p>
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-calendar"></i>
+                                    <span>Февраль 2024</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-university"></i>
+                                    <span>СПбГУ</span>
+                                </div>
+                            </div>
+                            <div class="project-stats">
+                                <div class="project-stat">
+                                    <div class="stat-value">0.1 нм</div>
+                                    <div class="stat-label">Точность AFM</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">5</div>
+                                    <div class="stat-label">Микроскопов</div>
+                                </div>
+                                <div class="project-stat">
+                                    <div class="stat-value">±0.01%</div>
+                                    <div class="stat-label">Погрешность</div>
+                                </div>
+                            </div>
+                            <button class="btn btn--outline project-details-btn" data-project="6">
+                                <i class="fas fa-info-circle"></i> Подробнее
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-load-more">
+                    <button class="btn btn--primary btn--large" id="load-more-projects">
+                        <i class="fas fa-plus"></i> Показать еще проекты
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Отзывы клиентов</h2>
+                    <p class="section-subtitle">Что говорят о нас наши партнеры и заказчики</p>
+                </div>
+
+                <div class="testimonials-container">
+                    <!-- Слайдер отзывов -->
+                    <div class="swiper testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Отзыв 1 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-avatar">
+                                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Иванов Сергей">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <h4>Иванов Сергей Петрович</h4>
+                                            <p>Технический директор, АО "Микрон"</p>
+                                        </div>
+                                        <div class="testimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>"Компания RB-BW.RU выполнила проект по запуску линии фотолитографии в рекордные сроки. Профессионализм команды и качество работ превзошли наши ожидания. Особенно хочется отметить техническую поддержку и обучение
+                                            персонала."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="project-link">
+                                            <i class="fas fa-project-diagram"></i> Проект: "Линия фотолитографии 0.35 мкм"
+                                        </div>
+                                        <div class="testimonial-date">
+                                            <i class="far fa-calendar"></i> 15 марта 2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Отзыв 2 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-avatar">
+                                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Петрова Анна">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <h4>Петрова Анна Владимировна</h4>
+                                            <p>Директор Центра нанотехнологий МГУ</p>
+                                        </div>
+                                        <div class="testimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>"Оснащение нашего исследовательского центра оборудованием от RB-BW.RU позволило вывести научные исследования на новый уровень. Оборудование работает стабильно, а техническая поддержка всегда оперативна и профессиональна."</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="project-link">
+                                            <i class="fas fa-project-diagram"></i> Проект: "Центр нанотехнологий МГУ"
+                                        </div>
+                                        <div class="testimonial-date">
+                                            <i class="far fa-calendar"></i> 20 сентября 2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Отзыв 3 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-avatar">
+                                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671fd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Сидоров Алексей">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <h4>Сидоров Алексей Николаевич</h4>
+                                            <p>Генеральный директор, НПП "Исток"</p>
+                                        </div>
+                                        <div class="testimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>"Внедрение системы автоматического контроля качества позволило нам сократить время тестирования на 40% и повысить точность измерений. Команда RB-BW.RU проявила глубокие знания в области ИИ и микроэлектроники."</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="project-link">
+                                            <i class="fas fa-project-diagram"></i> Проект: "Автоматизация контроля качества"
+                                        </div>
+                                        <div class="testimonial-date">
+                                            <i class="far fa-calendar"></i> 10 марта 2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Отзыв 4 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-header">
+                                        <div class="testimonial-avatar">
+                                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Кузнецова Мария">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <h4>Кузнецова Мария Игоревна</h4>
+                                            <p>Начальник производства, ЗАО "Светлана"</p>
+                                        </div>
+                                        <div class="testimonial-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p>"Установка PECVD от RB-BW.RU работает уже год без единого сбоя. Равномерность осаждения пленок стабильно составляет ±1%, что полностью соответствует заявленным характеристикам. Отличное оборудование и сервис!"</p>
+                                    </div>
+                                    <div class="testimonial-footer">
+                                        <div class="project-link">
+                                            <i class="fas fa-project-diagram"></i> Проект: "Установка PECVD для SiN"
+                                        </div>
+                                        <div class="testimonial-date">
+                                            <i class="far fa-calendar"></i> 25 ноября 2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Навигация слайдера -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <!-- Статистика отзывов -->
+                    <div class="testimonials-stats">
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <div class="stats-content">
+                                <div class="stats-number">47</div>
+                                <div class="stats-label">Отзывов</div>
+                            </div>
+                        </div>
+
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stats-content">
+                                <div class="stats-number">4.8</div>
+                                <div class="stats-label">Средний рейтинг</div>
+                            </div>
+                        </div>
+
+                        <div class="stats-card">
+                            <div class="stats-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="stats-content">
+                                <div class="stats-number">96%</div>
+                                <div class="stats-label">Рекомендуют</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма добавления отзыва -->
+        <section class="add-testimonial">
+            <div class="container">
+                <div class="add-testimonial__container">
+                    <div class="add-testimonial__form">
+                        <h2 class="form-title">Добавить отзыв</h2>
+                        <p class="form-subtitle">Поделитесь вашим опытом работы с нами</p>
+
+                        <form id="testimonial-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name">Ваше имя *</label>
+                                    <input type="text" id="client-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-position">Должность</label>
+                                    <input type="text" id="client-position">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-company">Компания *</label>
+                                    <input type="text" id="client-company" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-project">Проект</label>
+                                    <select id="client-project">
+                                        <option value="">Выберите проект</option>
+                                        <option value="1">Линия фотолитографии 0.35 мкм</option>
+                                        <option value="2">Центр нанотехнологий МГУ</option>
+                                        <option value="3">Автоматизация контроля качества</option>
+                                        <option value="4">Установка PECVD для SiN</option>
+                                        <option value="5">Чистая комната ISO 6</option>
+                                        <option value="6">Лаборатория метрологии</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="testimonial-rating">Оценка *</label>
+                                <div class="rating-input">
+                                    <div class="rating-stars">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                    <input type="hidden" id="testimonial-rating" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="testimonial-text">Текст отзыва *</label>
+                                <textarea id="testimonial-text" rows="6" required placeholder="Расскажите о вашем опыте работы с нами..."></textarea>
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn--primary btn--large">
+                                    <i class="fas fa-paper-plane"></i> Отправить отзыв
+                                </button>
+                                <div class="form-agreement">
+                                    Отправляя отзыв, вы соглашаетесь с его публикацией на сайте
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="add-testimonial__info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-check-circle"></i> Как публикуются отзывы</h3>
+                            <ul class="info-list">
+                                <li>Все отзывы проходят модерацию</li>
+                                <li>Мы публикуем только реальные отзывы</li>
+                                <li>Можем связаться для уточнения деталей</li>
+                                <li>Обеспечиваем конфиденциальность данных</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-question-circle"></i> Почему важен ваш отзыв</h3>
+                            <ul class="info-list">
+                                <li>Помогает нам становиться лучше</li>
+                                <li>Помогает другим компаниям принять решение</li>
+                                <li>Создает открытое профессиональное сообщество</li>
+                                <li>Стимулирует качество работы</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-envelope"></i> Контакты</h3>
+                            <div class="contact-info">
+                                <p><i class="fas fa-user"></i> Елена Смирнова, менеджер по работе с клиентами</p>
+                                <p><i class="fas fa-phone"></i> +7 (812) 309-27-37 (доб. 401)</p>
+                                <p><i class="fas fa-envelope"></i> feedback@rb-bw.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Партнеры -->
+        <section class="partners-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши партнеры</h2>
+                    <p class="section-subtitle">Компании, которые доверяют нам свои проекты</p>
+                </div>
+
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Mikron_Logo.svg/320px-Mikron_Logo.svg.png" alt="Микрон">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/MSU_Logo.svg/320px-MSU_Logo.svg.png" alt="МГУ">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/8/8d/SPbU_logo_rus.svg/320px-SPbU_logo_rus.svg.png" alt="СПбГУ">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Svetlana_%28company%29_logo.svg/320px-Svetlana_%28company%29_logo.svg.png" alt="Светлана">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/ASML_logo.svg/320px-ASML_logo.svg.png" alt="ASML">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Canon_Logo.svg/320px-Canon_Logo.svg.png" alt="Canon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <!-- Контакты -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <a href="tel:+78123092737">+7 (812) 309-27-37</a>
+                                    <a href="tel:+78005556889">+7 (800) 555-68-89</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a>
+                                    <a href="mailto:projects@rb-bw.ru">projects@rb-bw.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Услуги -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Оборудование -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Оборудование</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="mounting-line.html"><i class="fas fa-chevron-right"></i> Линии монтажа</a></li>
+                            <li><a href="soldering-stations.html"><i class="fas fa-chevron-right"></i> Паяльные станции</a></li>
+                            <li><a href="consumables.html"><i class="fas fa-chevron-right"></i> Расходные материалы</a></li>
+                            <li><a href="service-equipment.html"><i class="fas fa-chevron-right"></i> Сервисное оборудование</a></li>
+                            <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль и диагностика</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Подписка -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых проектах и технологиях</p>
+                        <form class="site-footer__subscribe">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">
+                        © 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.
+                    </div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Модальное окно деталей проекта -->
+    <div class="modal" id="project-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content modal__content--large">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="project-modal-content" id="project-modal-content">
+                <!-- Контент будет загружен динамически -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно успешной отправки отзыва -->
+    <div class="modal" id="success-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="success-message">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Спасибо за ваш отзыв!</h3>
+                <p>Ваш отзыв отправлен на модерацию. После проверки он будет опубликован на сайте.</p>
+                <button class="btn btn--primary" id="close-success-modal">Хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+
+</html>

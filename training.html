@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB-BW.RU - Обучение микроэлектронике</title>
+    <meta name="description" content="Профессиональное обучение микроэлектронике и технологическим процессам. Курсы, семинары, практикумы.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/photolithography.css">
+    <link rel="stylesheet" href="css/training.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта (такая же как в photolithography.html) -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="site-header__submenu">
+                        <li>
+                            <a href="film-deposition.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Нанесение пленок</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photolithography.html">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>Фотолитография</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="etching.html">
+                                <i class="fas fa-water"></i>
+                                <span>Травление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="metallization.html">
+                                <i class="fas fa-atom"></i>
+                                <span>Металлизация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chemical-treatment.html">
+                                <i class="fas fa-flask"></i>
+                                <span>Хим обработка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quality-control.html">
+                                <i class="fas fa-search"></i>
+                                <span>Контроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="packaging.html">
+                                <i class="fas fa-box"></i>
+                                <span>Корпусирование</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link active">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            <i class="fas fa-home"></i>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item" aria-current="page">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="training-page">
+        <!-- Герой-секция -->
+        <section class="training-hero">
+            <div class="container">
+                <div class="training-hero__content">
+                    <div class="training-hero__text">
+                        <h1 class="training-hero__title">Профессиональное обучение микроэлектронике</h1>
+                        <p class="training-hero__subtitle">Практические курсы и семинары от ведущих специалистов отрасли. Освойте современные технологии производства микросхем.</p>
+                        <div class="training-hero__stats">
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">лет опыта</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">выпускников</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">трудоустройство</div>
+                            </div>
+                        </div>
+                        <div class="training-hero__actions">
+                            <a href="#courses" class="btn btn--primary btn--large">
+                                <i class="fas fa-book"></i> Смотреть курсы
+                            </a>
+                            <a href="#consultation" class="btn btn--secondary btn--large">
+                                <i class="fas fa-calendar-check"></i> Записаться на консультацию
+                            </a>
+                        </div>
+                    </div>
+                    <div class="training-hero__image">
+                        <div class="training-hero__image-container">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Обучение микроэлектронике">
+                            <div class="image-badge">
+                                <i class="fas fa-microchip"></i>
+                                <span>Практические занятия</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества обучения -->
+        <section class="training-benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Почему выбирают наше обучение</h2>
+                    <p class="section-subtitle">Комплексный подход к подготовке специалистов микроэлектроники</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Практические лаборатории</h3>
+                        <p class="benefit-card__description">Работа на реальном оборудовании в чистых комнатах класса ISO 5</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Преподаватели-практики</h3>
+                        <p class="benefit-card__description">Опытные инженеры с 10+ лет стажа в микроэлектронной промышленности</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Государственный диплом</h3>
+                        <p class="benefit-card__description">Удостоверение о повышении квалификации установленного образца</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Трудоустройство</h3>
+                        <p class="benefit-card__description">Помощь в устройстве на предприятия-партнеры после обучения</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форматы обучения -->
+        <section class="training-formats">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Форматы обучения</h2>
+                    <p class="section-subtitle">Выберите наиболее подходящий для вас вариант</p>
+                </div>
+
+                <div class="formats-grid">
+                    <div class="format-card">
+                        <div class="format-card__header format-card__header--offline">
+                            <h3>Очное обучение</h3>
+                            <div class="format-price">от 45 000 ₽</div>
+                        </div>
+                        <div class="format-card__content">
+                            <ul class="format-features">
+                                <li><i class="fas fa-check"></i> Полный доступ к лабораториям</li>
+                                <li><i class="fas fa-check"></i> Личное общение с преподавателями</li>
+                                <li><i class="fas fa-check"></i> Практика на промышленном оборудовании</li>
+                                <li><i class="fas fa-check"></i> Экскурсии на предприятия</li>
+                            </ul>
+                            <div class="format-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>2-4 недели</span>
+                            </div>
+                            <a href="#offline-form" class="btn btn--primary btn--block">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="format-card format-card--highlighted">
+                        <div class="format-card__header format-card__header--online">
+                            <h3>Онлайн-курсы</h3>
+                            <div class="format-price">от 25 000 ₽</div>
+                        </div>
+                        <div class="format-card__content">
+                            <ul class="format-features">
+                                <li><i class="fas fa-check"></i> Дистанционные лекции и вебинары</li>
+                                <li><i class="fas fa-check"></i> Доступ к записям 24/7</li>
+                                <li><i class="fas fa-check"></i> Интерактивные симуляторы процессов</li>
+                                <li><i class="fas fa-check"></i> Общение в закрытом чате</li>
+                            </ul>
+                            <div class="format-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>1-2 месяца</span>
+                            </div>
+                            <a href="#online-form" class="btn btn--primary btn--block">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="format-card">
+                        <div class="format-card__header format-card__header--corporate">
+                            <h3>Корпоративное обучение</h3>
+                            <div class="format-price">Индивидуально</div>
+                        </div>
+                        <div class="format-card__content">
+                            <ul class="format-features">
+                                <li><i class="fas fa-check"></i> Программа под задачи компании</li>
+                                <li><i class="fas fa-check"></i> Обучение на вашем оборудовании</li>
+                                <li><i class="fas fa-check"></i> Сертификация сотрудников</li>
+                                <li><i class="fas fa-check"></i> Техническая поддержка после курса</li>
+                            </ul>
+                            <div class="format-duration">
+                                <i class="fas fa-clock"></i>
+                                <span>По договоренности</span>
+                            </div>
+                            <a href="#corporate-form" class="btn btn--primary btn--block">Обсудить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Курсы обучения -->
+        <section class="training-courses" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Программы обучения</h2>
+                    <p class="section-subtitle">Актуальные курсы по современным технологиям микроэлектроники</p>
+                </div>
+
+                <div class="courses-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="basic">Базовые курсы</button>
+                        <button class="tab-btn" data-tab="advanced">Продвинутые курсы</button>
+                        <button class="tab-btn" data-tab="specialized">Специализированные</button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <!-- Базовые курсы -->
+                        <div class="tab-pane active" id="basic">
+                            <div class="courses-grid">
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>Основы микроэлектроники</h3>
+                                        <div class="course-level">Начальный</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Введение в технологии изготовления интегральных схем. Основные технологические процессы.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Физические основы микроэлектроники</li>
+                                            <li><i class="fas fa-check-circle"></i> Кремниевая технология</li>
+                                            <li><i class="fas fa-check-circle"></i> Методы литографии</li>
+                                            <li><i class="fas fa-check-circle"></i> Введение в нанотехнологии</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>72 часа</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Сертификат</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">25 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="Основы микроэлектроники">Записаться</button>
+                                    </div>
+                                </div>
+
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>Технология фотолитографии</h3>
+                                        <div class="course-level">Базовый</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Полный цикл фотолитографического процесса. Практика на оборудовании ASML, Canon.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Принципы фотолитографии</li>
+                                            <li><i class="fas fa-check-circle"></i> Типы фоторезистов</li>
+                                            <li><i class="fas fa-check-circle"></i> Экспонирование и проявление</li>
+                                            <li><i class="fas fa-check-circle"></i> Контроль качества</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>96 часов</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Удостоверение</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">45 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="Технология фотолитографии">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Продвинутые курсы -->
+                        <div class="tab-pane" id="advanced">
+                            <div class="courses-grid">
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>Плазменные процессы в микроэлектронике</h3>
+                                        <div class="course-level">Продвинутый</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Технологии PVD, CVD, плазменного травления. Оборудование и режимы процессов.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Основы физики плазмы</li>
+                                            <li><i class="fas fa-check-circle"></i> Магнетронное напыление</li>
+                                            <li><i class="fas fa-check-circle"></i> Плазмохимическое осаждение</li>
+                                            <li><i class="fas fa-check-circle"></i> RIE и ICP травление</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>120 часов</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Удостоверение</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">65 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="Плазменные процессы в микроэлектронике">Записаться</button>
+                                    </div>
+                                </div>
+
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>Метрология и контроль качества</h3>
+                                        <div class="course-level">Продвинутый</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Методы контроля технологических процессов. Оборудование для измерений и анализа.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Эллипсометрия и профилометрия</li>
+                                            <li><i class="fas fa-check-circle"></i> Сканирующая электронная микроскопия</li>
+                                            <li><i class="fas fa-check-circle"></i> Рентгеноструктурный анализ</li>
+                                            <li><i class="fas fa-check-circle"></i> Статистический контроль процессов</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>108 часов</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Удостоверение</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">55 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="Метрология и контроль качества">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Специализированные курсы -->
+                        <div class="tab-pane" id="specialized">
+                            <div class="courses-grid">
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>МЭМС-технологии</h3>
+                                        <div class="course-level">Специалист</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Проектирование и изготовление микроэлектромеханических систем. Практикум в чистой комнате.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Основы МЭМС</li>
+                                            <li><i class="fas fa-check-circle"></i> Кремниевое микрообработка</li>
+                                            <li><i class="fas fa-check-circle"></i> Глубокая литография</li>
+                                            <li><i class="fas fa-check-circle"></i> Упаковка МЭМС-устройств</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>144 часа</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Диплом</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">85 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="МЭМС-технологии">Записаться</button>
+                                    </div>
+                                </div>
+
+                                <div class="course-card">
+                                    <div class="course-card__header">
+                                        <h3>Нанотехнологии в микроэлектронике</h3>
+                                        <div class="course-level">Эксперт</div>
+                                    </div>
+                                    <div class="course-card__content">
+                                        <p class="course-description">Современные нанотехнологические процессы. Электронно-лучевая литография, атомно-слоевое осаждение.</p>
+                                        <ul class="course-topics">
+                                            <li><i class="fas fa-check-circle"></i> Наноструктурирование</li>
+                                            <li><i class="fas fa-check-circle"></i> Электронно-лучевая литография</li>
+                                            <li><i class="fas fa-check-circle"></i> Атомно-слоевое осаждение</li>
+                                            <li><i class="fas fa-check-circle"></i> Квантовые точки и нанопроволоки</li>
+                                        </ul>
+                                        <div class="course-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>160 часов</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-user-graduate"></i>
+                                                <span>Диплом</span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">95 000 ₽</div>
+                                        <button class="btn btn--primary btn--block course-enroll-btn" data-course="Нанотехнологии в микроэлектронике">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преподаватели -->
+        <section class="training-instructors">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши преподаватели</h2>
+                    <p class="section-subtitle">Опытные специалисты с многолетней практикой в промышленности</p>
+                </div>
+
+                <div class="instructors-grid">
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Иванов Сергей">
+                        </div>
+                        <div class="instructor-card__content">
+                            <h3 class="instructor-name">Иванов Сергей Петрович</h3>
+                            <p class="instructor-title">Доктор технических наук, профессор</p>
+                            <p class="instructor-bio">20 лет опыта в микроэлектронной промышленности. Бывший главный технолог завода "Микрон". Автор 45 научных публикаций.</p>
+                            <div class="instructor-expertise">
+                                <span class="expertise-tag">Фотолитография</span>
+                                <span class="expertise-tag">Металлизация</span>
+                                <span class="expertise-tag">Технологическое оборудование</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Петрова Анна">
+                        </div>
+                        <div class="instructor-card__content">
+                            <h3 class="instructor-name">Петрова Анна Владимировна</h3>
+                            <p class="instructor-title">Кандидат технических наук, доцент</p>
+                            <p class="instructor-bio">15 лет в научно-исследовательском институте микроэлектроники. Специалист по плазменным процессам и МЭМС-технологиям.</p>
+                            <div class="instructor-expertise">
+                                <span class="expertise-tag">Плазменные процессы</span>
+                                <span class="expertise-tag">МЭМС</span>
+                                <span class="expertise-tag">Нанотехнологии</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card">
+                        <div class="instructor-card__image">
+                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671fd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Сидоров Алексей">
+                        </div>
+                        <div class="instructor-card__content">
+                            <h3 class="instructor-name">Сидоров Алексей Николаевич</h3>
+                            <p class="instructor-title">Ведущий инженер-технолог</p>
+                            <p class="instructor-bio">12 лет практического опыта на производстве интегральных схем. Специализация: контроль качества и метрология.</p>
+                            <div class="instructor-expertise">
+                                <span class="expertise-tag">Метрология</span>
+                                <span class="expertise-tag">Контроль качества</span>
+                                <span class="expertise-tag">Статистический анализ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи -->
+        <section class="training-consultation" id="consultation">
+            <div class="container">
+                <div class="consultation-container">
+                    <div class="consultation-form">
+                        <h2 class="consultation-form__title">Записаться на обучение</h2>
+                        <p class="consultation-form__subtitle">Оставьте заявку, и мы подберем для вас оптимальную программу обучения</p>
+
+                        <form class="consultation-form__content" id="training-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="training-name">Ваше имя *</label>
+                                    <input type="text" id="training-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="training-email">Email *</label>
+                                    <input type="email" id="training-email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="training-phone">Телефон *</label>
+                                    <input type="tel" id="training-phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="training-company">Компания / ВУЗ</label>
+                                    <input type="text" id="training-company">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="training-format">Предпочтительный формат</label>
+                                <select id="training-format">
+                                    <option value="">Выберите формат</option>
+                                    <option value="offline">Очное обучение</option>
+                                    <option value="online">Онлайн-курсы</option>
+                                    <option value="corporate">Корпоративное обучение</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="training-course">Интересующий курс</label>
+                                <select id="training-course">
+                                    <option value="">Выберите курс</option>
+                                    <option value="Основы микроэлектроники">Основы микроэлектроники</option>
+                                    <option value="Технология фотолитографии">Технология фотолитографии</option>
+                                    <option value="Плазменные процессы">Плазменные процессы в микроэлектронике</option>
+                                    <option value="Метрология">Метрология и контроль качества</option>
+                                    <option value="МЭМС">МЭМС-технологии</option>
+                                    <option value="Нанотехнологии">Нанотехнологии в микроэлектронике</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="training-comments">Ваши вопросы и пожелания</label>
+                                <textarea id="training-comments" rows="4" placeholder="Уровень подготовки, цели обучения, специальные требования..."></textarea>
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn--primary btn--large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Отправить заявку
+                                </button>
+                                <div class="form-agreement">
+                                    Нажимая кнопку, вы соглашаетесь с
+                                    <a href="privacy.html">политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="consultation-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-calendar-alt"></i> Ближайшие даты</h3>
+                            <ul class="dates-list">
+                                <li>
+                                    <div class="date-item">
+                                        <div class="date-day">15</div>
+                                        <div class="date-month">марта</div>
+                                    </div>
+                                    <div class="date-info">
+                                        <strong>Основы микроэлектроники</strong>
+                                        <span>Начало в 10:00</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date-item">
+                                        <div class="date-day">22</div>
+                                        <div class="date-month">марта</div>
+                                    </div>
+                                    <div class="date-info">
+                                        <strong>Технология фотолитографии</strong>
+                                        <span>Начало в 9:00</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date-item">
+                                        <div class="date-day">5</div>
+                                        <div class="date-month">апреля</div>
+                                    </div>
+                                    <div class="date-info">
+                                        <strong>МЭМС-технологии</strong>
+                                        <span>Начало в 10:30</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-info-circle"></i> Что включено</h3>
+                            <ul class="included-list">
+                                <li><i class="fas fa-check"></i> Все учебные материалы</li>
+                                <li><i class="fas fa-check"></i> Практикумы в лабораториях</li>
+                                <li><i class="fas fa-check"></i> Кофе-брейки и обеды</li>
+                                <li><i class="fas fa-check"></i> Сертификат об окончании</li>
+                                <li><i class="fas fa-check"></i> Консультации после курса</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-card">
+                            <h3><i class="fas fa-phone-alt"></i> Контакты отдела обучения</h3>
+                            <div class="contact-info">
+                                <p><i class="fas fa-user"></i> Мария Смирнова, менеджер по обучению</p>
+                                <p><i class="fas fa-phone"></i> +7 (812) 309-27-37 (доб. 301)</p>
+                                <p><i class="fas fa-envelope"></i> training@rb-bw.ru</p>
+                                <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер (такой же как в photolithography.html) -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <!-- Контакты -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <a href="tel:+78123092737">+7 (812) 309-27-37</a>
+                                    <a href="tel:+78005556889">+7 (800) 555-68-89</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a>
+                                    <a href="mailto:litho@rb-bw.ru">litho@rb-bw.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Услуги -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Оборудование -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Оборудование</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="mounting-line.html"><i class="fas fa-chevron-right"></i> Линии монтажа</a></li>
+                            <li><a href="soldering-stations.html"><i class="fas fa-chevron-right"></i> Паяльные станции</a></li>
+                            <li><a href="consumables.html"><i class="fas fa-chevron-right"></i> Расходные материалы</a></li>
+                            <li><a href="service-equipment.html"><i class="fas fa-chevron-right"></i> Сервисное оборудование</a></li>
+                            <li><a href="quality-control.html"><i class="fas fa-chevron-right"></i> Контроль и диагностика</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Подписка -->
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                        <form class="site-footer__subscribe">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">
+                        © 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.
+                    </div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Модальное окно успешной записи -->
+    <div class="modal" id="success-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Закрыть">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="success-message">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Заявка отправлена!</h3>
+                <p>Мы получили вашу заявку на обучение. Наш менеджер свяжется с вами в течение 2 часов в рабочее время.</p>
+                <button class="btn btn--primary" id="close-success-modal">Хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/training.js"></script>
+</body>
+
+</html>

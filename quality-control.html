@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контроль качества - RB-BW.RU - Оборудование для монтажа печатных плат</title>
+    <meta name="description" content="Комплексный контроль качества микроэлектронных устройств: метрология, дефектоскопия, электрические измерения и анализ надежности.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/quality-control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo-wrap">
+                <a href="index.html" class="site-header__logo-link">
+                    <img src="img/ntc.png" alt="RB-BW logo" class="site-header__logo">
+                </a>
+                <div class="site-header__brand">
+                    <div class="site-header__brand-name">RB-BW.RU</div>
+                    <div class="site-header__brand-subtitle">Оборудование для монтажа печатных плат</div>
+                </div>
+            </div>
+
+            <form class="site-header__search" action="/search" method="get">
+                <input type="text" name="q" class="site-header__search-input" placeholder="Поиск по каталогу...">
+                <button class="site-header__search-btn" type="submit" aria-label="Искать">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <div class="site-header__right-group">
+                <div class="site-header__contacts">
+                    <div class="site-header__phones">
+                        <a href="tel:+78123092737" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (812) 309-27-37</span>
+                        </a>
+                        <a href="tel:+78005556889" class="phone-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (800) 555-68-89</span>
+                        </a>
+                    </div>
+                    <button class="site-header__callback-btn" type="button">
+                        <i class="fas fa-phone-volume"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+
+                <div class="site-header__cart">
+                    <a href="cart.html" class="cart-link" aria-label="Корзина">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+                <div class="site-header__user">
+                    <a href="account.html" class="user-link" aria-label="Личный кабинет">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+
+            <button class="site-header__burger" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="site-header__nav">
+            <ul class="site-header__menu">
+                <li class="site-header__menu-item site-header__menu-item--has-sub">
+                    <button class="site-header__menu-link" type="button" aria-expanded="false">
+                        <i class="fas fa-cogs"></i>
+                        <span>Услуги</span>
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="site-header__submenu">
+                        <li>
+                            <a href="film-deposition.html">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Нанесение пленок</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photolithography.html">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>Фотолитография</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="etching.html">
+                                <i class="fas fa-water"></i>
+                                <span>Травление</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="metallization.html">
+                                <i class="fas fa-atom"></i>
+                                <span>Металлизация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chemical-treatment.html">
+                                <i class="fas fa-flask"></i>
+                                <span>Хим обработка</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quality-control.html" class="active">
+                                <i class="fas fa-search"></i>
+                                <span>Контроль</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="packaging.html">
+                                <i class="fas fa-box"></i>
+                                <span>Корпусирование</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="about.html" class="site-header__menu-link">
+                        <i class="fas fa-building"></i>
+                        <span>О компании</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="service.html" class="site-header__menu-link">
+                        <i class="fas fa-headset"></i>
+                        <span>Заказать сервис</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="training.html" class="site-header__menu-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Обучение</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="news.html" class="site-header__menu-link">
+                        <i class="fas fa-newspaper"></i>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="site-header__menu-item">
+                    <a href="projects.html" class="site-header__menu-link">
+                        <i class="fas fa-star"></i>
+                        <span>Проекты и отзывы</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link"><i class="fas fa-home"></i><span>Главная</span></a></li>
+                    <li class="breadcrumbs__item"><a href="services.html" class="breadcrumbs__link"><i class="fas fa-cogs"></i><span>Услуги</span></a></li>
+                    <li class="breadcrumbs__item" aria-current="page"><i class="fas fa-search"></i><span>Контроль качества</span></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="service-page">
+        <!-- Герой-секция -->
+        <section class="service-hero control-hero">
+            <div class="container">
+                <div class="service-hero__content">
+                    <div class="service-hero__text">
+                        <h1 class="service-hero__title">Контроль качества в микроэлектронике</h1>
+                        <p class="service-hero__subtitle">Комплексные услуги контроля и метрологии на всех этапах производства. Обеспечение качества и надежности электронных компонентов.</p>
+                        <div class="service-hero__features">
+                            <div class="feature-tag"><i class="fas fa-check-circle"></i><span>Нано-метрия</span></div>
+                            <div class="feature-tag"><i class="fas fa-check-circle"></i><span>Дефектоскопия</span></div>
+                            <div class="feature-tag"><i class="fas fa-check-circle"></i><span>Анализ надежности</span></div>
+                        </div>
+                        <div class="service-hero__actions">
+                            <a href="#order-form" class="btn btn--primary btn--large"><i class="fas fa-calendar-check"></i> Заказать услугу</a>
+                            <a href="#methods" class="btn btn--secondary btn--large"><i class="fas fa-play-circle"></i> Методы контроля</a>
+                        </div>
+                    </div>
+                    <div class="service-hero__image">
+                        <div class="service-hero__image-container">
+                            <img src="img/quality-control.png" alt="Процесс контроля качества">
+                            <div class="image-badge"><i class="fas fa-microscope"></i><span>Анализ</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Быстрые факты -->
+        <section class="quick-facts">
+            <div class="container">
+                <div class="quick-facts__grid">
+                    <div class="fact-card">
+                        <div class="fact-card__icon"><i class="fas fa-ruler"></i></div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">0.1 нм</div>
+                            <div class="fact-card__label">Точность измерений</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">100%</div>
+                            <div class="fact-card__label">Автоматизация</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon"><i class="fas fa-certificate"></i></div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">ISO 9001</div>
+                            <div class="fact-card__label">Сертификация</div>
+                        </div>
+                    </div>
+                    <div class="fact-card">
+                        <div class="fact-card__icon"><i class="fas fa-clock"></i></div>
+                        <div class="fact-card__content">
+                            <div class="fact-card__value">1-7 дн</div>
+                            <div class="fact-card__label">Срок выполнения</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Описание услуги -->
+        <section class="service-description">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Комплексный контроль качества</h2>
+                    <p class="section-subtitle">Обеспечение соответствия продукции требованиям и стандартам</p>
+                </div>
+                <div class="service-description__content">
+                    <div class="description-text">
+                        <p><strong>Контроль качества</strong> — систематическая проверка параметров и характеристик продукции на всех этапах жизненного цикла для обеспечения соответствия установленным требованиям.</p>
+                        <p>Мы предоставляем полный спектр услуг контроля:</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Метрология и нанометрия</li>
+                            <li><i class="fas fa-check"></i> Оптическая и СЭМ микроскопия</li>
+                            <li><i class="fas fa-check"></i> Рентгеновский контроль</li>
+                            <li><i class="fas fa-check"></i> Электрические измерения</li>
+                            <li><i class="fas fa-check"></i> Анализ состава и структуры</li>
+                            <li><i class="fas fa-check"></i> Испытания на надежность</li>
+                        </ul>
+                    </div>
+                    <div class="description-image">
+                        <div class="control-process-visual">
+                            <div class="scan-line"></div>
+                            <div class="sample">
+                                <div class="sample-surface">
+                                    <div class="defect defect-1"></div>
+                                    <div class="defect defect-2"></div>
+                                    <div class="feature feature-1"></div>
+                                    <div class="feature feature-2"></div>
+                                </div>
+                            </div>
+                            <div class="monitor">
+                                <div class="monitor-screen">
+                                    <div class="waveform"></div>
+                                    <div class="data-points">
+                                        <div class="data-point"></div>
+                                        <div class="data-point"></div>
+                                        <div class="data-point"></div>
+                                        <div class="data-point"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visual-legend">
+                                <div><span class="legend-color defect-color"></span> Дефекты</div>
+                                <div><span class="legend-color feature-color"></span> Особенности</div>
+                                <div><span class="legend-color scan-color"></span> Сканирование</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Методы контроля -->
+        <section class="methods-section" id="methods">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Методы контроля качества</h2>
+                    <p class="section-subtitle">Современные технологии для комплексной диагностики</p>
+                </div>
+                <div class="methods-grid">
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon"><i class="fas fa-microscope"></i></div>
+                            <h3>Микроскопия</h3>
+                        </div>
+                        <div class="method-content">
+                            <p>Визуальный контроль с высоким разрешением:</p>
+                            <ul>
+                                <li>Оптическая микроскопия (до 2000×)</li>
+                                <li>СЭМ (до 1 000 000×)</li>
+                                <li>АСМ (атомно-силовая микроскопия)</li>
+                                <li>Конфокальная микроскопия</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon"><i class="fas fa-wave-square"></i></div>
+                            <h3>Электрические измерения</h3>
+                        </div>
+                        <div class="method-content">
+                            <p>Измерение электрических параметров:</p>
+                            <ul>
+                                <li>IV/CV характеристики</li>
+                                <li>Измерение сопротивления</li>
+                                <li>Тестирование переходов</li>
+                                <li>Анализ шумов</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon"><i class="fas fa-radiation"></i></div>
+                            <h3>Рентгеновский анализ</h3>
+                        </div>
+                        <div class="method-content">
+                            <p>Неконтактный контроль внутренней структуры:</p>
+                            <ul>
+                                <li>Рентгеновская томография</li>
+                                <li>EDX анализ состава</li>
+                                <li>Контроль паяных соединений</li>
+                                <li>Анализ BGA шариков</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="method-card">
+                        <div class="method-header">
+                            <div class="method-icon"><i class="fas fa-thermometer"></i></div>
+                            <h3>Термические испытания</h3>
+                        </div>
+                        <div class="method-content">
+                            <p>Испытания в экстремальных условиях:</p>
+                            <ul>
+                                <li>Температурные циклы</li>
+                                <li>Термоударные испытания</li>
+                                <li>Высокотемпературное хранение</li>
+                                <li>Испытания на влагостойкость</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Оборудование -->
+        <section class="equipment-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Измерительное оборудование</h2>
+                    <p class="section-subtitle">Современная метрологическая база для точных измерений</p>
+                </div>
+                <div class="equipment-table">
+                    <div class="table-header">
+                        <div>Оборудование</div>
+                        <div>Параметры</div>
+                        <div>Применение</div>
+                    </div>
+                    <div class="table-row">
+                        <div><strong>СЭМ Hitachi SU8000</strong></div>
+                        <div>Разрешение 0.8 нм, 1 кВ - 30 кВ</div>
+                        <div>Морфология поверхности, EDX анализ</div>
+                    </div>
+                    <div class="table-row">
+                        <div><strong>Профилометр KLA P-16+</strong></div>
+                        <div>Точность 0.1 нм, диапазон 1 мм</div>
+                        <div>Измерение толщины, шероховатости</div>
+                    </div>
+                    <div class="table-row">
+                        <div><strong>Рентгеновский томограф</strong></div>
+                        <div>Разрешение 1 мкм, 160 кВ</div>
+                        <div>3D анализ внутренней структуры</div>
+                    </div>
+                    <div class="table-row">
+                        <div><strong>Измеритель Keithley 4200</strong></div>
+                        <div>Точность 0.001%, до 1000 В</div>
+                        <div>IV/CV характеристики, анализ переходов</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сертификаты -->
+        <section class="certificates-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Сертификация и стандарты</h2>
+                    <p class="section-subtitle">Соответствие международным стандартам качества</p>
+                </div>
+                <div class="certificates-grid">
+                    <div class="certificate">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <h3>ISO 9001:2015</h3>
+                        <p>Система менеджмента качества</p>
+                    </div>
+                    <div class="certificate">
+                        <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>ISO/IEC 17025</h3>
+                        <p>Компетентность испытательных лабораторий</p>
+                    </div>
+                    <div class="certificate">
+                        <div class="cert-icon"><i class="fas fa-industry"></i></div>
+                        <h3>ГОСТ Р ИСО/МЭК</h3>
+                        <p>Национальные стандарты</p>
+                    </div>
+                    <div class="certificate">
+                        <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Международные стандарты</h3>
+                        <p>ASTM, JEDEC, MIL-STD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма заказа -->
+        <section class="order-section" id="order-form">
+            <div class="container">
+                <div class="order-container">
+                    <div class="order-form">
+                        <h2 class="order-form__title">Заказать услуги контроля качества</h2>
+                        <p class="order-form__subtitle">Заполните форму для подбора оптимальных методов контроля</p>
+                        <form class="order-form__content">
+                            <div class="form-row">
+                                <div class="form-group"><label for="name">Ваше имя *</label><input type="text" id="name" required></div>
+                                <div class="form-group"><label for="company">Компания</label><input type="text" id="company"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="email">Email *</label><input type="email" id="email" required></div>
+                                <div class="form-group"><label for="phone">Телефон *</label><input type="tel" id="phone" required></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="product-type">Тип продукции</label>
+                                <select id="product-type">
+                                    <option value="">Выберите тип</option>
+                                    <option value="wafer">Кремниевые пластины</option>
+                                    <option value="chip">Кристаллы ИС</option>
+                                    <option value="package">Корпусированные компоненты</option>
+                                    <option value="pcb">Печатные платы</option>
+                                    <option value="module">Электронные модули</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="control-type">Тип контроля</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="control" value="visual"> Визуальный контроль</label>
+                                    <label><input type="checkbox" name="control" value="dimension"> Измерение размеров</label>
+                                    <label><input type="checkbox" name="control" value="electrical"> Электрические измерения</label>
+                                    <label><input type="checkbox" name="control" value="reliability"> Испытания на надежность</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="quantity">Количество, шт</label><input type="number" id="quantity" min="1" value="1"></div>
+                                <div class="form-group"><label for="standard">Требуемый стандарт</label><input type="text" id="standard" placeholder="ISO, ГОСТ, MIL..."></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="requirements">Особые требования</label>
+                                <textarea id="requirements" rows="4" placeholder="Конкретные параметры контроля, условия испытаний, форма отчета..."></textarea>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="btn btn--primary btn--large"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+                                <div class="form-agreement">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-clock"></i> Сроки выполнения</h3>
+                            <ul>
+                                <li>Экспресс-анализ: 1-2 дня</li>
+                                <li>Стандартные испытания: 3-5 дней</li>
+                                <li>Комплексный контроль: 5-7 дней</li>
+                                <li>Сертификационные испытания: от 10 дней</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-file-contract"></i> Результаты контроля</h3>
+                            <ul>
+                                <li>Подробный отчет с данными</li>
+                                <li>Графики и изображения</li>
+                                <li>Заключение о соответствии</li>
+                                <li>Рекомендации по улучшению</li>
+                                <li>Сертификат (при необходимости)</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-phone-alt"></i> Контакты отдела</h3>
+                            <div class="contact-info">
+                                <p><i class="fas fa-user"></i> Михаил Орлов, руководитель отдела контроля</p>
+                                <p><i class="fas fa-phone"></i> +7 (812) 309-27-37 (доб. 230)</p>
+                                <p><i class="fas fa-envelope"></i> quality@rb-bw.ru</p>
+                                <p><i class="fas fa-certificate"></i> Сертифицированный специалист ISO 9001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="site-footer__main">
+            <div class="container">
+                <div class="site-footer__grid">
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контакты</h3>
+                        <div class="site-footer__contacts">
+                            <div class="footer-contact"><i class="fas fa-phone-alt"></i>
+                                <div><a href="tel:+78123092737">+7 (812) 309-27-37</a><a href="tel:+78005556889">+7 (800) 555-68-89</a></div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-envelope"></i>
+                                <div><a href="mailto:info@rb-bw.ru">info@rb-bw.ru</a><a href="mailto:quality@rb-bw.ru">quality@rb-bw.ru</a></div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-clock"></i>
+                                <div>
+                                    <p>Пн-Пт: 9:00-18:00</p>
+                                    <p>Сб-Вс: выходной</p>
+                                </div>
+                            </div>
+                            <div class="footer-contact"><i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Санкт-Петербург,<br>ул. Технологическая, 25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Технологические услуги</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="film-deposition.html"><i class="fas fa-chevron-right"></i> Нанесение пленок</a></li>
+                            <li><a href="photolithography.html"><i class="fas fa-chevron-right"></i> Фотолитография</a></li>
+                            <li><a href="etching.html"><i class="fas fa-chevron-right"></i> Травление</a></li>
+                            <li><a href="metallization.html"><i class="fas fa-chevron-right"></i> Металлизация</a></li>
+                            <li><a href="chemical-treatment.html"><i class="fas fa-chevron-right"></i> Хим обработка</a></li>
+                            <li><a href="quality-control.html" class="active"><i class="fas fa-chevron-right"></i> Контроль качества</a></li>
+                            <li><a href="packaging.html"><i class="fas fa-chevron-right"></i> Корпусирование</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Контрольное оборудование</h3>
+                        <ul class="site-footer__menu">
+                            <li><a href="microscopes.html"><i class="fas fa-chevron-right"></i> Микроскопы</a></li>
+                            <li><a href="profilometers.html"><i class="fas fa-chevron-right"></i> Профилометры</a></li>
+                            <li><a href="xray-equipment.html"><i class="fas fa-chevron-right"></i> Рентгеновское оборудование</a></li>
+                            <li><a href="test-equipment.html"><i class="fas fa-chevron-right"></i> Измерительные приборы</a></li>
+                            <li><a href="environmental-chambers.html"><i class="fas fa-chevron-right"></i> Климатические камеры</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__col">
+                        <h3 class="site-footer__title">Подписаться на новости</h3>
+                        <p class="site-footer__text">Получайте информацию о новых технологиях и специальных предложениях</p>
+                        <form class="site-footer__subscribe"><input type="email" placeholder="Ваш email" required><button type="submit"><i class="fas fa-paper-plane"></i></button></form>
+                        <div class="site-footer__social">
+                            <a href="#" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__bottom-content">
+                    <div class="site-footer__copyright">© 2024 RB-BW.RU. Все права защищены. Лаборатория микроэлектронных технологий.</div>
+                    <div class="site-footer__links">
+                        <a href="privacy.html">Политика конфиденциальности</a>
+                        <a href="terms.html">Пользовательское соглашение</a>
+                        <a href="sitemap.html">Карта сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/quality-control.js"></script>
+</body>
+
+</html>
